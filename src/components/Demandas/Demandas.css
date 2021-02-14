@@ -1,0 +1,79 @@
+.section-demandas h2{
+    margin-top: 20px;
+}
+
+.container-cad-demandas{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container-cad-demandas h2{
+    font-size: 30px;
+    max-width: 50%;
+}
+
+.container-cad-demandas .button-demandas{
+    width: 200px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    background-color: #E63946;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.section-demandas .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-demandas{
+    width: 100%;
+}
+
+.container hr{
+    width: 100%;
+}
+
+.container-demandas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.demandas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.demandas .card{
+    margin: 10px;
+}
+
+.container-demandas h2{
+    text-align: center;
+}
+
+.button{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #E63946;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    transition: 200ms;
+}
+
+.button:hover{
+    background-color: #fc505e;
+    text-decoration: none;
+    color: white;
+}

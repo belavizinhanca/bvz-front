@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 import './Mediador.css'
 
@@ -17,7 +18,7 @@ function Mediador() {
                 <Container>
                     <h2>Como se tornar um Mediador?</h2>
                     <p>Tornar-se um Mediador é bem simples basta você clicar no botão ao lado para fazer o cadastro e depois disso você já estará apto a começar a fazer o bem!</p>
-                    <a className="button" href="#">Seja Mediador</a>
+                    <a className="button" as={Link} href="/cadastro-mediador" to="/cadastro-moderador">Seja Mediador</a>
                 </Container>
             </div>
         </section>
