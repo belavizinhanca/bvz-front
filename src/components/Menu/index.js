@@ -12,7 +12,7 @@ function BaseMenu() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
-                    <Nav.Link className="text-white nav-links" as={Link} href="/" to="/">Home</Nav.Link>
+                    <Nav.Link className="text-white nav-links" as={Link} href="/" to="/" closeButton>Home</Nav.Link>
                     <Nav.Link className="text-white nav-links" as={Link} href="/quem-somos" to="/quem-somos">Quem Somos</Nav.Link>
                     <NavDropdown title="Como Ajudar?" className="nav-links-dropdown">
                         <NavDropdown.Item href="/mediador" to="/mediador">Mediador</NavDropdown.Item>
