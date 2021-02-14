@@ -30,7 +30,7 @@
     display: inline-block;
 }
 
-.button{
+.button-mediador{
     background-color: #003049;
     width: 220px;
     height: 45px;
@@ -43,7 +43,7 @@
     transition: 200ms;
 }
 
-.button:hover{
+.button-mediador:hover{
     background-color: #03476b;
     text-decoration: none;
     color: white;
