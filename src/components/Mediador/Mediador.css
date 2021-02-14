@@ -1,0 +1,50 @@
+.section-mediador{
+    width: 100%;
+    display: flex;
+}
+
+.container-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: calc(100vh - 60px);
+    padding: 20px;
+}
+
+.seja-mediador{
+    background-color: #E63946;
+    color: white;
+}
+
+.container-text  h2{
+    font-size: 45px;
+}
+
+.container-text p{
+    font-size: 20px;
+    font-weight: 200;
+    max-width: 520px;
+    text-align: left;
+    display: inline-block;
+}
+
+.button{
+    background-color: #003049;
+    width: 220px;
+    height: 45px;
+    font-size: 20px;
+    color: white;
+    line-height: 45px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+.button:hover{
+    background-color: #03476b;
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,58 @@
+.home-page{
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: white;
+    color: black;
+}
+
+.section-home{
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 5px;
+}
+
+.text-home h2{
+    font-size: 45px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.text-home p{
+    font-size: 25px;
+    font-weight: 200;
+    max-width: 480px;
+}
+
+.text-home .button{
+    font-size: 20px;
+    width: 180px;
+    height: 42px;
+    display: inline-block;
+    background-color: #E63946;
+    color: white;
+    border-radius: 5px;
+    transition: 200ms;
+    line-height: 42px;
+    text-align: center;
+}
+
+.text-home .button:hover{
+    background-color: #fc505e;
+    text-decoration: none;
+}
+
+.img-container{
+    width: 100%;
+    max-width: 420px;
+}
+
+.home-svg .home-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
