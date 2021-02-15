@@ -20,7 +20,7 @@ function CadDemanda() {
                     </Form.Group>
 
                     <Form.Group>
-                        <Form.Label htmlFor="demandas">Demanda</Form.Label>
+                        <Form.Label htmlFor="demandas">Demandas</Form.Label>
                         <Form.Control as="textarea" rows={4} placeholder="Demandas" id="demandas" />
                     </Form.Group>
 
