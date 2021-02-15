@@ -28,7 +28,7 @@ function Demandas() {
                             <Card.Body>
                                 <Card.Title>Nome Morador</Card.Title>
                                 <Card.Text>
-                                Demanda
+                                Demandas
                                 </Card.Text>
                                 <a className="button" onClick={doacao}>Doar</a>
                             </Card.Body>
