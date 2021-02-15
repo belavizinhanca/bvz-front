@@ -1,6 +1,9 @@
 {
   "hosting": {
+<<<<<<< HEAD
     "site": "bela-vizinhanca",
+=======
+>>>>>>> todeploy
     "public": "build",
     "ignore": [
       "firebase.json",
