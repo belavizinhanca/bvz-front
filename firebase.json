@@ -1,0 +1,20 @@
+{
+  "hosting": {
+<<<<<<< HEAD
+    "site": "bela-vizinhanca",
+=======
+>>>>>>> todeploy
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

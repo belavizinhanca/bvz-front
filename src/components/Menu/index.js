@@ -11,7 +11,7 @@ function BaseMenu() {
             <Navbar.Brand className="logo" as={Link} href="/" to="/">Logo</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ml-auto">
+                <Nav className="mr-0 ml-auto">
                     <Nav.Link className="text-white nav-links" as={Link} href="/" to="/" closeButton>Home</Nav.Link>
                     <Nav.Link className="text-white nav-links" as={Link} href="/quem-somos" to="/quem-somos">Quem Somos</Nav.Link>
                     <NavDropdown title="Como Ajudar?" className="nav-links-dropdown">
@@ -19,8 +19,11 @@ function BaseMenu() {
                         <NavDropdown.Item href="/doacao" to="/doacao">Doação</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link className="text-white nav-links" as={Link} href="/contato" to="/contato">Contato</Nav.Link>
-                    <Nav.Link className="text-white button-login" as={Link} href="/entrar" to="/entrar">Entrar</Nav.Link>
+                    {/* Botão que irá fazer o login */}
+                  <ion-icon className="sign-in" size="large" name="person-circle-outline" id="sign-in" ></ion-icon>
                 </Nav>
+            
+                
             </Navbar.Collapse>
             </Container>
         </Navbar>

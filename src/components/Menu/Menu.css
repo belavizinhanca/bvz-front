@@ -61,3 +61,10 @@
     background-color: #003049;
     text-align: center;
 }
+
+ion-icon {
+    color: white;
+   padding-top:12px ;
+    margin-left: 50px;
+    margin-right: 10px;
+  }
