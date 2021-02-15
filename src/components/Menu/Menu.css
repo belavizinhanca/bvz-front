@@ -64,7 +64,7 @@
 
 ion-icon {
     color: white;
-   padding-top:12px ;
-    margin-left: 50px;
-    margin-right: 10px;
-  }
+    height: 60px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
