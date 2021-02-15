@@ -30,9 +30,6 @@ form{
     box-shadow: 1px 1px 5px 1px #ccc;
 }
 
-.form-control{
-}
-
 .form-control:focus{
     outline: none;
     /* border: 2px solid #E9C46A; */
