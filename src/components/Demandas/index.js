@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom';
 import './Demandas.css'
 
 function Demandas() {
+    function doacao() {
+        alert('Doação concluida!')
+    }
+
     return(
         <section className="section-demandas">
             <Container>
@@ -24,39 +28,9 @@ function Demandas() {
                             <Card.Body>
                                 <Card.Title>Nome Morador</Card.Title>
                                 <Card.Text>
-                                Demanda
+                                Demandas
                                 </Card.Text>
-                                <a className="button">Doar</a>
-                            </Card.Body>
-                        </Card>
-                        <Card style={{ width: '15rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
-                            <Card.Body>
-                                <Card.Title>Nome Morador</Card.Title>
-                                <Card.Text>
-                                Demanda
-                                </Card.Text>
-                                <a className="button">Doar</a>
-                            </Card.Body>
-                        </Card>
-                        <Card style={{ width: '15rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
-                            <Card.Body>
-                                <Card.Title>Nome Morador</Card.Title>
-                                <Card.Text>
-                                Demanda
-                                </Card.Text>
-                                <a className="button">Doar</a>
-                            </Card.Body>
-                        </Card>
-                        <Card style={{ width: '15rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
-                            <Card.Body>
-                                <Card.Title>Nome Morador</Card.Title>
-                                <Card.Text>
-                                Demanda
-                                </Card.Text>
-                                <a className="button">Doar</a>
+                                <a className="button" onClick={doacao}>Doar</a>
                             </Card.Body>
                         </Card>
                     </div>
