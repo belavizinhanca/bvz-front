@@ -24,7 +24,7 @@ function Demandas() {
                             <Card.Body>
                                 <Card.Title>Nome Morador</Card.Title>
                                 <Card.Text>
-                                Demanda
+                                Demandas
                                 </Card.Text>
                                 <a as={Link} href="/cadastrar-demanda" to="/cadastrar-demanda" className="button">Doar</a>
                             </Card.Body>
