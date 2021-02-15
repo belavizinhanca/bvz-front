@@ -20,7 +20,8 @@
 }
 
 form{
-    width: 380px;
+    width: 100%;
+    max-width: 380px;
     background-color: white;
     padding: 20px;
     border-radius: 10px;

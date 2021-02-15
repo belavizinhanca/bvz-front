@@ -48,3 +48,15 @@
     text-decoration: none;
     color: white;
 }
+
+@media screen and (max-width: 768px){
+    .section-mediador{
+        flex-direction: column;       
+    }
+
+    .container-text{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}

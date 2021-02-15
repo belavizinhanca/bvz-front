@@ -56,3 +56,28 @@
     object-fit: cover;
     object-position: center;
 }
+
+@media screen and (max-width: 768px){
+    .section-home{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-home h2{
+        width: 100%;
+        margin: 0 auto;
+        max-width: 100%;
+        font-size: 35px;
+    }
+
+    .text-home p{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .text-home{
+        width: 100%;
+        text-align: center;
+    }
+}

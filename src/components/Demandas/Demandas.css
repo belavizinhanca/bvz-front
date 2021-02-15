@@ -77,3 +77,20 @@
     text-decoration: none;
     color: white;
 }
+
+@media screen and (max-width: 768px){
+    .container-cad-demandas{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-cad-demandas h2{
+        max-width: 100%;
+    }
+
+    .container-cad-demandas, .section-demandas h2{
+        font-size: 30px;
+    }
+}
