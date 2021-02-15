@@ -6,7 +6,10 @@ import QuemSomos from './components/Quem_Somos'
 import Mediador from './components/Mediador'
 import CadastroMediador from './components/Cadastro_Mediador'
 import Demandas from './components/Demandas'
+import CadDemanda from './components/Cadastro_Demanda'
 import Contato from './components/Contato'
+import Login from './components/Login'
+import Cadastro from './components/Cadastro'
 
 function Routes() {
     return(
@@ -17,6 +20,9 @@ function Routes() {
             <Route exact path="/mediador" component={Mediador} />
             <Route exact path="/cadastro-mediador" component={CadastroMediador} />
             <Route exact path="/doacao" component={Demandas} />
+            <Route exact path="/cadastrar-demanda" component={CadDemanda} />
+            <Route exact path="/entrar" component={Login} />
+            <Route exact path="/cadastro" component={Cadastro} />
         </Switch>
     )
 }

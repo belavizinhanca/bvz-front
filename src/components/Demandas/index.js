@@ -12,7 +12,7 @@ function Demandas() {
 
                 <div className="container-cad-demandas">
                     <h2>Clique no botão para fazer uma nova demanda</h2>
-                    <a href="#" className="button">Cadastrar Demanda</a>
+                    <a as={Link} href="/cadastrar-demanda" to="/cadastrar-demanda" className="button">Cadastrar Demanda</a>
                 </div>
 
                 <div className="container-demandas">
@@ -26,7 +26,7 @@ function Demandas() {
                                 <Card.Text>
                                 Demandas
                                 </Card.Text>
-                                <a as={Link} href="/cadastrar-demanda" to="/cadastrar-demanda" className="button">Doar</a>
+                                <a className="button">Doar</a>
                             </Card.Body>
                         </Card>
                         <Card style={{ width: '15rem' }}>
@@ -36,7 +36,7 @@ function Demandas() {
                                 <Card.Text>
                                 Demanda
                                 </Card.Text>
-                                <a as={Link} href="/cadastrar-demanda" to="/cadastrar-demanda" className="button">Doar</a>
+                                <a className="button">Doar</a>
                             </Card.Body>
                         </Card>
                         <Card style={{ width: '15rem' }}>
@@ -46,7 +46,7 @@ function Demandas() {
                                 <Card.Text>
                                 Demanda
                                 </Card.Text>
-                                <a as={Link} href="/cadastrar-demanda" to="/cadastrar-demanda" className="button">Doar</a>
+                                <a className="button">Doar</a>
                             </Card.Body>
                         </Card>
                         <Card style={{ width: '15rem' }}>
@@ -56,7 +56,7 @@ function Demandas() {
                                 <Card.Text>
                                 Demanda
                                 </Card.Text>
-                                <a as={Link} href="/cadastrar-demanda" to="/cadastrar-demanda" className="button">Doar</a>
+                                <a className="button">Doar</a>
                             </Card.Body>
                         </Card>
                     </div>
