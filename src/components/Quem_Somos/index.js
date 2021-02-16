@@ -16,7 +16,7 @@ function QuemSomos() {
                     </div>
 
                     <div className="img-container">
-                        <img src={goal} alt="Imagem Nosso Objetivo" />
+                        <img className="img-goal" src={goal} alt="Imagem Nosso Objetivo" />
                     </div>
                 </Container>
             </section>

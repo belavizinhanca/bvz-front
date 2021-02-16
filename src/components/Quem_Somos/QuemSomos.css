@@ -15,13 +15,16 @@
 
 .img-container img{
     width: 100%;
-    max-width: 480px;
 }
 
-.main-section.goal > .container > .img-container img{
+.img-container .img-goal{
+    max-width: 360px;
+}
+
+/* .main-section.goal > .container > .img-container img{
     width: 100%;
     max-width: 400px;
-}
+} */
 
 .container{
     width: 100%;

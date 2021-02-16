@@ -52,9 +52,6 @@
 
 .home-svg .home-img{
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
 }
 
 @media screen and (max-width: 768px){
