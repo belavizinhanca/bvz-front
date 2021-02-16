@@ -1,17 +1,9 @@
-.home-page{
-    width: 100%;
-    height: calc(100vh - 60px);
-    background-color: white;
-    color: black;
-}
-
-.section-home{
+.section-home .container{
     width: 100%;
     height: calc(100vh - 60px);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding: 20px 5px;
 }
 
@@ -54,7 +46,7 @@
     width: 100%;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 968px){
     .section-home{
         flex-direction: column;
         justify-content: center;

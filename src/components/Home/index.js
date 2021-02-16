@@ -7,8 +7,8 @@ import './Home.css'
 
 function Home() {
     return(
-        <section className="home-page">
-            <Container className="section-home">
+        <section className="section-home">
+            <Container>
                 <div className="text-home">
                     <h2>Título de um texto explicativo</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue ex a lacus consequat blandit. Cras eros sapien.</p>

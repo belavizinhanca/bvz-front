@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Routes from './Routes.js'
 import Menu from './components/Menu'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
         <Routes />
       </main>
     </div>
+
+    <footer>
+      <Footer />
+    </footer>
     </BrowserRouter>
   );
 }

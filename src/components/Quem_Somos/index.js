@@ -8,7 +8,7 @@ import team from '../images/equipe.png'
 function QuemSomos() {
     return(
         <div className="main-section">
-            <section className="main-section goal">
+            <section className="goal">
                 <Container className="flex-container">
                     <div className="text-container">    
                         <h2>Nosso Objetivo</h2>
@@ -21,7 +21,7 @@ function QuemSomos() {
                 </Container>
             </section>
 
-            <section className="main-section team">
+            <section className="team">
                 <Container className="flex-container">
                     <div className="img-container">
                         <img src={team} alt="Imagem Nossa Equipe" />
