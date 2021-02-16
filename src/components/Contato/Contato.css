@@ -20,16 +20,14 @@
 }
 
 form{
-    width: 380px;
+    width: 100%;
+    max-width: 380px;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     color: black;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 5px 1px #ccc;
-}
-
-.form-control{
 }
 
 .form-control:focus{

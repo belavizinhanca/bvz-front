@@ -32,12 +32,17 @@
     padding-top: 0;
     padding-bottom: 0;
     line-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid transparent;
 }
 
 .nav-links-dropdown{
     display: flex;
     height: 60px;
     align-items: center;
+    justify-content: center;
 }
 
 .navbar-dark .navbar-nav .nav-link{
@@ -62,9 +67,9 @@
     text-align: center;
 }
 
-ion-icon {
-    color: white;
-   padding-top:12px ;
-    margin-left: 50px;
-    margin-right: 10px;
-  }
+ion-icon{
+    display: flex;
+    align-self: center;
+    height: 100%;
+    justify-self: center;
+}
