@@ -20,7 +20,7 @@ function BaseMenu() {
                     </NavDropdown>
                     <Nav.Link className="text-white nav-links" href="/contato" to="/contato">Contato</Nav.Link>
                     {/* Botão que irá fazer o login */}
-                    <Nav.Link className="text-white nav-links" href="/entrar" to="/entrar"><ion-icon className="sign-in" size="large" name="person-circle-outline" id="sign-in" />Entrar</Nav.Link>
+                    <Nav.Link className="text-white nav-links" href="/entrar" to="/entrar">Entrar<ion-icon className="sign-in" size="large" name="person-circle-outline" id="sign-in" /></Nav.Link>
                 </Nav>
             
                 
