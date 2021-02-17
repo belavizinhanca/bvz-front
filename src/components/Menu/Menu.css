@@ -1,70 +1,54 @@
 .navbar{
-    background-color: #003049;
     padding: 0;
-    height: 60px;
+    height: 70px;
     display: flex;
     align-items: center;
-}
-/* 
-.container{
-    max-width: 1080px;
-} */
-
-.button-login{
-    width: 65px;
-    height: 35px;
-    background-color: #E63946;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    transition: 200ms;
-    margin-left: 10px;
+    background-color: #fff;
+    box-shadow: 1px 0 5px #000;
 }
 
-.button-login:hover{
-    background-color: #fc505e;
+.navbar-dark .navbar-brand{
+    color: #000;
 }
 
 .nav-links{
-    height: 60px;
-    padding-top: 0;
-    padding-bottom: 0;
-    line-height: 60px;
+    padding: 0;
+    line-height: 70px;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #000;
+}
+
+.nav-links:hover{
+    border-bottom: 3px solid #E63946;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #000;
+}
+
+.nav-links-icon{
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-links-icon:hover{
+    border-bottom: 3px solid #E63946;
 }
 
 .nav-links-dropdown{
     display: flex;
-    height: 60px;
     align-items: center;
-    justify-content: center;
-}
-
-.navbar-dark .navbar-nav .nav-link{
-    color: white;
-}
-
-.nav-links.active{
-    border-bottom: 2px solid #E9C46A;
-}
-
-.nav-links:hover{
-    border-bottom: 2px solid #E9C46A;
+    align-self: center;
+    border-bottom: 3px solid transparent;
+    height: 70px;
 }
 
 .nav-links-dropdown:hover{
-    border-bottom: 2px solid #E9C46A;
-    color: white;
-}
-
-.navbar-nav{
-    background-color: #003049;
-    text-align: center;
+    border-bottom: 3px solid #E63946;
 }
 
 ion-icon{
@@ -73,4 +57,5 @@ ion-icon{
     height: 100%;
     justify-self: center;
     padding-left: 5px;
+    color: #E63946
 }

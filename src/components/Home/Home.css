@@ -17,6 +17,7 @@
     font-size: 25px;
     font-weight: 200;
     max-width: 480px;
+    text-align: justify;
 }
 
 .text-home .button{

@@ -12,7 +12,7 @@ function QuemSomos() {
                 <Container className="flex-container">
                     <div className="text-container">    
                         <h2>Nosso Objetivo</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue ex a lacus consequat blandit. Cras eros sapien, volutpat eu diam et, lobortis aliquet massa. Duis congue et odio non varius. Curabitur mattis consequat massa fermentum lacinia.</p>
+                        <p>Usar a Plataforma Bela vizinhança para ajudar moradores de rua situado na Bela vista. Incentivando moradores residenciais a criar uma conexão com moradores de rua, para entender quais suas necessidades real. Assim minimizando suas dores. A Plataforma é de fácil acesso e simples funcionalidade, para facilitar quem quer ajudar o próximo.</p>
                     </div>
 
                     <div className="img-container">
