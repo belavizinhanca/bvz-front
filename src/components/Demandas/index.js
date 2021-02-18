@@ -1,10 +1,24 @@
 import React from 'react'
-import { Container, Card, Button } from 'react-bootstrap'
+import { useState, useEffect } from 'react'
+import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 
 import './Demandas.css'
+import Demanda from './demanda'
 
 function Demandas() {
+    const [demanda, setDemanda] = useState()
+
+    useEffect(() => {
+        async function fetchData() {
+            const demanda = await fetch('https://bvz-back.herokuapp.com/moradores')
+            const demandaJson = await demanda.json()
+
+            setDemanda(demandaJson)
+        }
+        fetchData()
+    })
+
     function doacao() {
         alert('Doação concluida!')
     }
@@ -23,16 +37,7 @@ function Demandas() {
                     <h2>Demandas</h2>
                     <hr />
                     <div className="demandas">
-                        <Card style={{ width: '15rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
-                            <Card.Body>
-                                <Card.Title>Nome Morador</Card.Title>
-                                <Card.Text>
-                                Demandas
-                                </Card.Text>
-                                <a className="button" onClick={doacao}>Doar</a>
-                            </Card.Body>
-                        </Card>
+                        {demanda && demanda.map(item => <Demanda nome={item.nome} perfil={item.perfil} demanda={item.demanda} onClick={doacao}/>)}
                     </div>
                 </div>
             </Container>

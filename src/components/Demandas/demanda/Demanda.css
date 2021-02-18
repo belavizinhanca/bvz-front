@@ -1,0 +1,30 @@
+.demandas .card{
+    margin: 10px;
+}
+
+
+.card-text{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.button{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #E63946;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    transition: 200ms;
+}
+
+.button:hover{
+    background-color: #fc505e;
+    text-decoration: none;
+    color: white;
+}
