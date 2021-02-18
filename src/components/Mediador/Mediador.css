@@ -1,66 +1,34 @@
 .section-mediador{
-    width: 100%;
     display: flex;
 }
 
-.container-text{
+.container-flex{
     width: 50%;
     height: calc(100vh - 60px);
-    padding: 20px;
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
 
- .container-text.container{
-    display: flex;
-    flex-direction: column;
-}
-
-.seja-mediador{
+.container-flex.sejamediador{
     background-color: #E63946;
+    max-width: 100%;
     color: white;
 }
 
-.container-text  h2{
-    font-size: 45px;
-}
-
-.container-text p{
-    font-size: 20px;
-    font-weight: 200;
-    max-width: 520px;
-    text-align: left;
-    display: inline-block;
-}
-
-.button-mediador{
+.container-flex .button{
     background-color: #003049;
-    width: 220px;
-    height: 45px;
-    font-size: 20px;
-    color: white;
-    line-height: 45px;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    transition: 200ms;
+    align-self: start;
 }
 
-.button-mediador:hover{
-    background-color: #03476b;
-    text-decoration: none;
-    color: white;
+.container-flex .button:hover{
+    background-color: #024468;
 }
 
 @media screen and (max-width: 768px){
     .section-mediador{
-        flex-direction: column;       
+        flex-direction: column;
     }
 
-    .container-text{
+    .container-flex{
         width: 100%;
-        align-items: center;
-        justify-content: center;
     }
 }
