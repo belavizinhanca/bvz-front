@@ -1,17 +1,9 @@
-.home-page{
-    width: 100%;
-    height: calc(100vh - 60px);
-    background-color: white;
-    color: black;
-}
-
-.section-home{
+.section-home .container{
     width: 100%;
     height: calc(100vh - 60px);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding: 20px 5px;
 }
 
@@ -25,6 +17,7 @@
     font-size: 25px;
     font-weight: 200;
     max-width: 480px;
+    text-align: justify;
 }
 
 .text-home .button{
@@ -52,12 +45,9 @@
 
 .home-svg .home-img{
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 968px){
     .section-home{
         flex-direction: column;
         justify-content: center;
