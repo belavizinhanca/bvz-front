@@ -1,6 +1,6 @@
 .navbar{
     padding: 0;
-    height: 70px;
+    /* height: 70px; */
     align-items: center;
     box-shadow: 1px 0 5px #000;
 }
@@ -24,4 +24,8 @@
 
 .link-login ion-icon{
     padding-left: 5px;
+}
+
+.navbar-nav{
+    align-items: center;
 }

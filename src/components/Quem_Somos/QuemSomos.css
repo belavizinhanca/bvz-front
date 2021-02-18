@@ -1,59 +1,97 @@
-.main-section{
-    width: 100%;
-    background-color: white;
-    color: black;
+.container-goal{
+    display: flex;
+    align-items: center;
+    margin: 150px 0;
 }
 
-/* .flex-container{
-    padding: 80px 10px;
+.container-flex{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.container-flex.text{
+    align-items: flex-start;
+}
+
+.container-flex img{
+    width: 100%;
+    max-width: 340px;
+}
+
+.container-team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-team h2{
+    margin-bottom: 20px;
+}
+
+.container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.card{
+    align-items: center;
+    text-align: center;
+    padding: .75rem;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #ccc;
+}
+
+.card .foto{
+    width: 120px;
+    height: 120px;
+    border: 2px solid #E63946;
+    border-radius: 50%;
+    margin-bottom: .75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card .foto svg{
+    font-size: 60px;
+}
+
+/* .card .foto img{
+    width: 100%;
 } */
 
-.img-container img{
-    width: 100%;
+.card .line{
+    width: 80px;
+    height: 5px;
+    background-color: #E63946;
+    border-radius: 40px;
+    margin-bottom: .75rem;
+    display: inline-block;
 }
 
-.img-container .img-goal{
-    max-width: 320px;
+.card-link{
+    font-size: 30px;
+    color: #E63946;
 }
 
-.container{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-     flex-wrap: wrap;
+.card-link:hover{
+    color: #e6525f;
 }
 
-.team, .goal{
-    height: calc(100vh - 60px);
-    display: flex;
-    align-items: center;
-}
-
-.text-container h2{
-    font-size: 45px;
-}
-
-.text-container p{
-    font-size: 25px;
-    font-weight: 200;
-    max-width: 480px;
-}
-
-@media screen and (max-width: 980px){
-    .flex-container{
+@media screen and (max-width: 768px){
+    .container-goal{
         flex-direction: column;
     }
 
-    .text-container{
-        text-align: center;
-    }
-
-    .text-container h2{
-        font-size: 35px;
-    }
-
-    .text-container p {
-        font-size: 25px;
+    .container-flex{
+        width: 90%;
     }
 }

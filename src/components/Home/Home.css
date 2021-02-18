@@ -1,5 +1,6 @@
 .container-home{
     display: flex;
+    align-items: center;
     height: calc(100vh - 60px);
 }
 
@@ -37,6 +38,12 @@
 }
 
 @media screen and (max-width: 768px){
+    .container-home{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
     .container-flex{
         width: 90%;
     }
