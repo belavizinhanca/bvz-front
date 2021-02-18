@@ -1,7 +1,7 @@
 .form-section{
     width: 100%;
-    height: calc(100vh - 60px);
     background-color: white;
+    margin: 150px 0;
     color: black;
 }
 

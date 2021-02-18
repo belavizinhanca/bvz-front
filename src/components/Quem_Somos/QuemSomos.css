@@ -1,7 +1,8 @@
 .container-goal{
     display: flex;
     align-items: center;
-    margin: 150px 0;
+     /* margin: 90px 0;  */
+     height: calc(100vh - 60px);
 }
 
 .container-flex{
@@ -26,6 +27,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
 }
 
 .container-team h2{
@@ -89,6 +91,7 @@
 @media screen and (max-width: 768px){
     .container-goal{
         flex-direction: column;
+
     }
 
     .container-flex{
