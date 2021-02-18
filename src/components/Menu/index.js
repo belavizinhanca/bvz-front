@@ -21,6 +21,7 @@ function BaseMenu() {
                     <NavDropdown.Item href="/doacao" to="/doacao">Doação</NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="/contato" to="/contato">Contato</Nav.Link>
+                <Nav.Link href="/app" to="/app">App</Nav.Link>
                 <Nav.Link href="/entrar" to="/entrar" className="link-login">
                     Entrar <ion-icon className="sign-in" size="large" name="person-circle-outline" id="sign-in" />
                 </Nav.Link>
