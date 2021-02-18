@@ -1,22 +1,21 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import home from '../images/home.png'
-import { Link } from 'react-router-dom'
 
 import './Home.css'
 
 function Home() {
     return(
         <section className="section-home">
-            <Container>
-                <div className="text-home">
-                    <h2>Título de um texto explicativo</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue ex a lacus consequat blandit. Cras eros sapien.</p>
-                    <a className="button" as={Link} href="/quem-somos" to="quem-somos">Saiba Mais</a>
+            <Container className="container-home">
+                <div className="container-flex text">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis massa lorem, sit amet sollicitudin lorem vulputate non. Nulla facilisi.</p>
+                    <a href="/quem-somos" to="/quem-somos">Saiba Mais</a>
                 </div>
 
-                <div className="img-container">
-                    <img className="home-img" src={home} alt="Imagem"/>
+                <div className="container-flex">
+                    <img src={home} alt="Imagem Contribuição" />
                 </div>
             </Container>
         </section>

@@ -1,1 +1,5 @@
 iniciando branch dev
+
+                    <Nav.Link className="nav-links-icon" href="/entrar" to="/entrar">
+                        Entrar <ion-icon className="sign-in" size="large" name="person-circle-outline" id="sign-in" />
+                    </Nav.Link>
