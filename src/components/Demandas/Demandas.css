@@ -1,5 +1,6 @@
 .section-demandas h2{
     margin-top: 20px;
+    text-align: center;
 }
 
 .container-cad-demandas{
@@ -27,10 +28,6 @@
 .section-demandas .container{
     display: flex;
     flex-direction: column;
-}
-
-.container-demandas{
-    width: 100%;
 }
 
 .container hr{
