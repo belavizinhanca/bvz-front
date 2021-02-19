@@ -1,14 +1,11 @@
-.section-home{
-    margin-top: 70px;
-}
-
 .container-home{
     display: flex;
     align-items: center;
-    height: 600px;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
-.container-flex{
+.container-flex-home{
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -16,11 +13,11 @@
     padding: 20px 10px;
 }
 
-.container-flex.text{
+.container-flex-home.text{
     align-items: flex-start;
 }
 
-.container-flex a{
+.container-flex-home a{
     width: 220px;
     height: 45px;
     line-height: 45px;
@@ -31,12 +28,12 @@
     color: white;
 }
 
-.container-flex a:hover{
+.container-flex-home a:hover{
     background-color: #e6525f;
     text-decoration: none;
 }
 
-.container-flex img{
+.container-flex-home img{
     width: 100%;
     max-width: 340px;
 }
@@ -48,11 +45,11 @@
         margin-top: 80px;
     }
 
-    .container-flex{
+    .container-flex-home{
         width: 90%;
     }
 
-    .container-flex.text{
+    .container-flex-home.text{
         align-items: center;
     }
 }

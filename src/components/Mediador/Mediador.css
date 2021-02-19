@@ -2,24 +2,25 @@
     display: flex;
 }
 
-.container-flex{
+.container-flex-med{
     width: 50%;
     height: calc(100vh - 60px);
-    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
-.container-flex.sejamediador{
+.container-flex-med.sejamediador{
     background-color: #E63946;
     max-width: 100%;
     color: white;
 }
 
-.container-flex .button{
+.container-flex-med .button{
     background-color: #003049;
     align-self: start;
 }
 
-.container-flex .button:hover{
+.container-flex-med .button:hover{
     background-color: #024468;
 }
 
@@ -28,7 +29,7 @@
         flex-direction: column;
     }
 
-    .container-flex{
+    .container-flex-med{
         width: 100%;
     }
 }
