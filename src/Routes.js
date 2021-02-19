@@ -8,6 +8,7 @@ import CadastroMediador from './components/Cadastro_Mediador'
 import Demandas from './components/Demandas'
 import CadDemanda from './components/Cadastro_Demanda'
 import Contato from './components/Contato'
+import Gerenciar from './components/Gerenciar'
 import Login from './components/Login'
 import Cadastro from './components/Cadastro'
 
@@ -23,6 +24,7 @@ function Routes() {
             <Route exact path="/cadastrar-demanda" component={CadDemanda} />
             <Route exact path="/entrar" component={Login} />
             <Route exact path="/cadastro" component={Cadastro} />
+            <Route exact path="/gerenciar" component={Gerenciar} />
         </Switch>
     )
 }

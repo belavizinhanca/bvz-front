@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 import { Navbar, Nav, NavDropdown, Container, Image } from 'react-bootstrap'
 import logo from './logo.jpg'
 
@@ -21,6 +21,7 @@ function BaseMenu() {
                     <NavDropdown.Item href="/doacao" to="/doacao">Doação</NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="/contato" to="/contato">Contato</Nav.Link>
+                <Nav.Link href="/gerenciar" to="/gerenciar">Gerenciar</Nav.Link>
                 <Nav.Link href="/app" to="/app">App</Nav.Link>
                 <Nav.Link href="/entrar" to="/entrar" className="link-login">
                     <ion-icon className="sign-in" size="large" name="person-circle-outline" id="sign-in" /> Entrar
