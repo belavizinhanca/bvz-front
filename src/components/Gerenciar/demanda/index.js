@@ -1,32 +1,19 @@
 import React from 'react'
 import { Card, Button } from 'react-bootstrap'
-import { useState } from 'react'
-import Axios from "axios"
 
 import './Demanda.css'
 
 function Demanda(props) {
-/*     const [employeeList, setEmployeeList] = useState([]);
-
-    const deleteEmployee = (id) => {
-        Axios.delete(`http://localhost:3001/moradores/${id}`).then((response) => {
-          setEmployeeList(
-            employeeList.filter((val) => {
-              return val.id != id;
-            })
-          );
+    async function handleDelete(id) {
+      const confirm = window.confirm("Tem certeza que deseja excluir essa demanda?");
+      if (confirm) {
+        await fetch(`https://bvz-back.herokuapp.com/moradores/${id}`, {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json",
+          },
         });
-      };
-
-    {employeeList.map((val, key) => {
-        
-    })}   */
-    const [id, setId] = useState({
-        id: ''
-    })
-    
-    function getId() {
-      
+      }
     }
 
     return(
@@ -45,9 +32,12 @@ function Demanda(props) {
                     <Card.Text>
                         {props.demanda}
                     </Card.Text>
-                    <Button className="button-delete">
-                  Delete
-                </Button>
+                    <Button
+                      className="button-delete"
+                      onClick={() => handleDelete(props.id)}
+                    >
+                      Delete
+                    </Button>
                     <Button className="button-update">Atualizar</Button>
                 </Card.Body>
             </Card>
