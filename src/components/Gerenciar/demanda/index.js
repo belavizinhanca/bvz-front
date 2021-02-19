@@ -103,7 +103,7 @@ function Demanda(props) {
                   className="button-delete"
                   onClick={() => handleDelete(props.id)}
                 >
-                  Delete
+                  Deletar
                 </Button>
                 <Button className="button-update" onClick={handleShow}>Atualizar</Button>
             </Card.Body>

@@ -1,7 +1,11 @@
+.section-home{
+    margin-top: 70px;
+}
+
 .container-home{
     display: flex;
     align-items: center;
-    height: calc(100vh - 60px);
+    height: 600px;
 }
 
 .container-flex{
