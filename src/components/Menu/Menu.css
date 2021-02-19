@@ -17,13 +17,18 @@
     color: #000;
 }
 
+.navbar .navbar-nav .nav-link.link-login{
+    padding-left: 25px;
+}
+
 .link-login{
     display: flex;
     align-items: center;
 }
 
 .link-login ion-icon{
-    padding-left: 5px;
+    padding-right: 5px;
+    color: #E63946;
 }
 
 .navbar-nav{

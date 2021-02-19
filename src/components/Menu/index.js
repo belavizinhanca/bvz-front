@@ -23,7 +23,7 @@ function BaseMenu() {
                 <Nav.Link href="/contato" to="/contato">Contato</Nav.Link>
                 <Nav.Link href="/app" to="/app">App</Nav.Link>
                 <Nav.Link href="/entrar" to="/entrar" className="link-login">
-                    Entrar <ion-icon className="sign-in" size="large" name="person-circle-outline" id="sign-in" />
+                    <ion-icon className="sign-in" size="large" name="person-circle-outline" id="sign-in" /> Entrar
                 </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
