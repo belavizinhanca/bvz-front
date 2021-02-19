@@ -1,29 +1,39 @@
 .footer-container{
     width: 100%;
     padding: 20px 20px;
-    background-color: #003049;
+    background:
+    linear-gradient(
+      rgba(103, 18, 1, 0.6),rgba(103, 18, 1, 0.6)
+    ),
+    url('../images/cardboard-wallpaper-template_1194-6785.jpg');
+    
 }
 
 .footer-items{
     width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    
 }
 
 .footer-logo a{
     color: white;
     font-size: 25px;
+    margin-right: 200px;
 }
 
 .footer-links ul{
     list-style-type: none;
     margin: 0;
+
 }
 
 .footer-links a{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
+    font-size: 15pt;
+    font-weight: 350;
+
 }
 
 .footer-links a:hover{

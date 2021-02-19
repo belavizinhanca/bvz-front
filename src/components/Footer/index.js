@@ -1,5 +1,6 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Container, Image } from 'react-bootstrap'
+import logo from '../images/logobvznovoLinha.png'
 
 import './Footer.css'
 
@@ -9,7 +10,7 @@ function Footer() {
             <Container>
                 <div className="footer-items">
                     <div className="footer-logo">
-                        <a href="/" to="/">Logo</a>
+                        <a href="/" to="/"><Image src={logo} alt="Logo Bela Vizinhança" width="420" /></a>
                     </div>
 
                     <div className="footer-links">
