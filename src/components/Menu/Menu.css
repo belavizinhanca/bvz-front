@@ -7,6 +7,10 @@
    
 }
 
+.navbar .navbar-brand img  {
+    width: 30;
+}
+
 .navbar .navbar-nav .nav-link{
     line-height: 70px;
     border-bottom: 2px solid transparent;
