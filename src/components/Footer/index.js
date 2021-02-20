@@ -10,7 +10,7 @@ function Footer() {
             <Container>
                 <div className="footer-items">
                     <div className="footer-logo">
-                        <a href="/" to="/"><Image src={logo} alt="Logo Bela Vizinhança" width="420" /></a>
+                        <a href="/" to="/"><Image src={logo} alt="Logo Bela Vizinhança" /></a>
                     </div>
 
                     <div className="footer-links">

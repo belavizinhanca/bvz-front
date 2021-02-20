@@ -13,13 +13,13 @@
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     
 }
 
-.footer-logo a{
-    color: white;
-    font-size: 25px;
-    margin-right: 200px;
+.footer-logo a img{
+    width: 100%;
+    max-width: 320px;
 }
 
 .footer-links ul{
@@ -38,4 +38,12 @@
 
 .footer-links a:hover{
     text-decoration: underline;
+}
+
+@media screen and (max-width: 475px){
+    .footer-items{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
