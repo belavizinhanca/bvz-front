@@ -3,12 +3,13 @@
     /* height: 70px; */
     align-items: center;
     box-shadow: 1px 0 5px #000;
-    background-color: black;
-   
+
+    background-color: black;  
 }
 
-.navbar .navbar-brand img  {
-    width: 30;
+.navbar-brand img{
+    width: 100%;
+    max-width: 280px;
 }
 
 .navbar .navbar-nav .nav-link{

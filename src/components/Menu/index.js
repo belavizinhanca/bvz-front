@@ -9,9 +9,9 @@ function BaseMenu() {
     return(
         <Navbar fixed="top" expand="lg">
         <Container>
-            <Navbar.Brand href="/" to="/">
-                <img src={logo} alt="" width="180"/>
-            </Navbar.Brand>
+
+            <Navbar.Brand href="/" to="/"><Image src={logo} alt="Logo Bela Vizinhança" width="320" /></Navbar.Brand>
+
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
