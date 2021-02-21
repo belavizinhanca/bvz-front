@@ -31,7 +31,7 @@ function Demandas() {
     return(
         <section className="section-demandas">
             <div className="banner">
-                <img src={titulo} width="600" />
+                <img src={titulo}/>
             </div>
             <Container>
                 <div className="container-demandas-d">

@@ -11,6 +11,10 @@
     background-color: #E82E2B;
 }
 
+.banner img{
+    width: 60%;
+}
+
 .icon-demanda{
     display: flex;
     align-items: center;
