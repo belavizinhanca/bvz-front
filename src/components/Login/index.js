@@ -1,9 +1,11 @@
 import React from 'react'
 import { Container, Form, Button } from 'react-bootstrap'
 
+import './Login.css'
+
 function Login() {
     return(
-        <section className="form-section">
+        <section className="form-section login">
             <Container className="form-container">
                 <h2>Login</h2>
                 <Form>

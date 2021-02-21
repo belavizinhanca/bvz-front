@@ -1,8 +1,13 @@
 .form-section{
     width: 100%;
-    background-color: white;
-    margin: 150px 0 100px 0;
-    color: black;
+    height: 600px;
+}
+
+.form-section.contato{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('.././images/contatobg.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
 }
 
 .form-container{
@@ -12,7 +17,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 60px;
 }
 
 .form-container h2{
@@ -28,7 +32,6 @@ form{
     border-radius: 10px;
     color: black;
     border: 1px solid #ccc;
-    box-shadow: 1px 1px 5px 1px #ccc;
     padding: 0;
     overflow: hidden;
 }

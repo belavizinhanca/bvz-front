@@ -1,8 +1,6 @@
-.form-container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.form-section.login {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('.././images/loginbg.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
 }
