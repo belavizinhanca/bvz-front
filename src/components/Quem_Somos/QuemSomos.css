@@ -60,13 +60,15 @@
     overflow: hidden;
 }
 
-.card .foto svg{
-    font-size: 60px;
+.foto-perfil{
+    width: 171px;
+    height: 180px;
+    align-self: center;
 }
 
-/* .card .foto img{
-    width: 100%;
-} */
+.nopic{
+    font-size: 60px;
+}
 
 .card .line{
     width: 80px;
