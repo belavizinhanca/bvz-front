@@ -10,18 +10,23 @@
 }
 
 .container-flex-med.sejamediador{
-    background-color: #E63946;
     max-width: 100%;
     color: white;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('.././images/image-mediador.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .container-flex-med .button{
-    background-color: #003049;
+    background-color: #E82E2B;
     align-self: start;
+    color: white;
+    border: none;
 }
 
 .container-flex-med .button:hover{
-    background-color: #024468;
+    background-color: #e64f4c;
+    color: #fff;
 }
 
 @media screen and (max-width: 768px){

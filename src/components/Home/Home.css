@@ -23,13 +23,13 @@
     line-height: 45px;
     text-align: center;
     border-radius: 5px;
-    background-color: #E63946;
+    background-color: #E82E2B;
     font-size: 18px;
     color: white;
 }
 
 .container-flex-home a.button-saibamais:hover{
-    background-color: #e6525f;
+    background-color: #e64f4c;
     text-decoration: none;
 }
 
@@ -40,7 +40,7 @@
 
 .container-flex-home img{
     width: 100%;
-    max-width: 340px;
+    max-width: 380px;
 }
 
 @media screen and (max-width: 768px){

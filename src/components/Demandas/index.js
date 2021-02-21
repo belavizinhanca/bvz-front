@@ -1,10 +1,15 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { Container } from 'react-bootstrap'
+import { Container, OverlayTrigger, Tooltip } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
+import { BsFillPlusCircleFill } from "react-icons/bs";
+
+import titulo from '../images/hall.png';
 
 import './Demandas.css'
 import Demanda from './demanda'
+
+
 
 function Demandas() {
     const [demanda, setDemanda] = useState()
@@ -25,17 +30,21 @@ function Demandas() {
 
     return(
         <section className="section-demandas">
+            <div className="banner">
+                <img src={titulo} width="600" />
+            </div>
             <Container>
-                <h2>Veja abaixo a lista de demandas</h2>
-
-                <div className="container-cad-demandas">
-                    <h2>Clique no botão para fazer uma nova demanda</h2>
-                    <a as={Link} href="/cadastrar-demanda" to="/cadastrar-demanda" className="button">Cadastrar Demanda</a>
-                </div>
-
-                <div className="container-demandas">
-                    <h2>Demandas</h2>
-                    <hr />
+                <div className="container-demandas-d">
+                    <div className="icon-demanda">
+                        <OverlayTrigger
+                                placement="left"
+                                delay={{ show: 250, hide: 400 }}
+                                overlay={renderTooltip}>
+                        <a href="/cadastrar-demanda" to="/cadastrar-demanda" title="Cadastar demanda">    
+                            <BsFillPlusCircleFill />
+                        </a>
+                        </OverlayTrigger>
+                    </div>
                     <div className="demandas">
                         {demanda && demanda.map(item => <Demanda nome={item.nome} perfil={item.perfil} demanda={item.demanda} onClick={doacao}/>)}
                     </div>
@@ -46,3 +55,11 @@ function Demandas() {
 }
 
 export default Demandas;
+
+
+const renderTooltip = (props) => (
+    <Tooltip id="icon-demanda" {...props}>
+      Cadatre uma nova demanda
+    </Tooltip>
+  );
+  

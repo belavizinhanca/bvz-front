@@ -1,5 +1,17 @@
-.demandas .card{
+.modal-body{
+    padding: 0;
+}
+
+.modal-content{
+    overflow: hidden;
+}
+
+.demandas .card-gerenciar{
     margin: 10px;
+}
+
+.card-gerenciar{
+    height: 360px;
 }
 
 
@@ -31,4 +43,32 @@
     background-color: #fc505e;
     text-decoration: none;
     color: white;
+}
+
+.button-modal{
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 0;
+    transition: 200ms;
+}
+
+.button-modal.atualiza{
+    background-color: #E63946;
+}
+
+.button-modal.atualiza:hover{
+    background-color: #333;
+}
+
+form.form-modal{
+    width: 100%;
+    max-width: none;
+    border: none;
+    box-shadow: none;
+    overflow: visible;
+}
+
+.inputs-container-modal{
+    padding: 20px;
 }

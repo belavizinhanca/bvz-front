@@ -1,15 +1,17 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
 import { Navbar, Nav, NavDropdown, Container, Image } from 'react-bootstrap'
-import logo from './logo.jpg'
+import logo from '../images/logobvznovoLinha.png'
 
 import './Menu.css'
 
 function BaseMenu() {
     return(
-        <Navbar bg="white" variant="light" fixed="top" expand="lg">
+        <Navbar fixed="top" variant="dark" expand="lg">
         <Container>
-            <Navbar.Brand href="/" to="/"><Image src={logo} alt="Logo Bela Vizinhança" width="60" height="60"/></Navbar.Brand>
+
+            <Navbar.Brand href="/" to="/"><Image src={logo} alt="Logo Bela Vizinhança" width="320" /></Navbar.Brand>
+
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">

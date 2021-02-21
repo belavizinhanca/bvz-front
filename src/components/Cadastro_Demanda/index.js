@@ -39,20 +39,22 @@ function CadDemanda() {
             <Container className="form-container">
                 <h2>Cadastrar demanda</h2>
                 <Form onSubmit={handleSubmit}>
-                    <Form.Group>
-                        <Form.Label htmlFor="nome">Nome</Form.Label>
-                        <Form.Control type="text" value={form.nome} placeholder="Nome" id="nome" onChange={handleChange}/>
-                    </Form.Group>
+                    <div className="inputs-container">
+                        <Form.Group>
+                            <Form.Label htmlFor="nome">Nome</Form.Label>
+                            <Form.Control type="text" value={form.nome} placeholder="Nome" id="nome" onChange={handleChange}/>
+                        </Form.Group>
 
-                    <Form.Group>
-                        <Form.Label htmlFor="perfil">Perfil</Form.Label>
-                        <Form.Control type="text" value={form.perfil} placeholder="Conte a história dessa pessoa" id="perfil" onChange={handleChange}/>
-                    </Form.Group>
+                        <Form.Group>
+                            <Form.Label htmlFor="perfil">Perfil</Form.Label>
+                            <Form.Control type="text" value={form.perfil} placeholder="Conte a história dessa pessoa" id="perfil" onChange={handleChange}/>
+                        </Form.Group>
 
-                    <Form.Group>
-                        <Form.Label htmlFor="demanda">Demandas</Form.Label>
-                        <Form.Control as="textarea" value={form.demanda} rows={4} placeholder="Diga o que essa pessoa precisa" id="demanda" onChange={handleChange}/>
-                    </Form.Group>
+                        <Form.Group>
+                            <Form.Label htmlFor="demanda">Demandas</Form.Label>
+                            <Form.Control as="textarea" value={form.demanda} rows={4} placeholder="Diga o que essa pessoa precisa" id="demanda" onChange={handleChange}/>
+                        </Form.Group>
+                    </div>
 
                     <Button className="button-enviar" type="submit">
                         Cadastrar

@@ -56,27 +56,28 @@ function Demanda(props) {
             <Modal.Title>Atualizar Demanda | {props.nome}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-          <Form onSubmit={() => handleUpdate(props.id) }>
-                    <Form.Group>
-                        <Form.Label htmlFor="nome">Nome</Form.Label>
-                        <Form.Control type="text" value={form.nome} placeholder="Atualizar Nome" id="nome" onChange={handleChange}/>
-                    </Form.Group>
+          <Form onSubmit={() => handleUpdate(props.id) } className="form-modal">
+              <div className="inputs-container-modal">
+                <Form.Group>
+                    <Form.Label htmlFor="nome">Nome</Form.Label>
+                    <Form.Control type="text" value={form.nome} placeholder="Atualizar Nome" id="nome" onChange={handleChange}/>
+                </Form.Group>
 
-                    <Form.Group>
-                        <Form.Label htmlFor="perfil">Perfil</Form.Label>
-                        <Form.Control type="text" value={form.perfil} placeholder="Atualizar perfil" id="perfil" onChange={handleChange}/>
-                    </Form.Group>
+                <Form.Group>
+                    <Form.Label htmlFor="perfil">Perfil</Form.Label>
+                    <Form.Control type="text" value={form.perfil} placeholder="Atualizar perfil" id="perfil" onChange={handleChange}/>
+                </Form.Group>
 
-                    <Form.Group>
-                        <Form.Label htmlFor="demanda">Demandas</Form.Label>
-                        <Form.Control as="textarea" value={form.demanda} rows={4} placeholder="Atualizar demandas" id="demanda" onChange={handleChange}/>
-                    </Form.Group>
-
-                    <Button variant="primary" type="submit">
+                <Form.Group>
+                    <Form.Label htmlFor="demanda">Demandas</Form.Label>
+                    <Form.Control as="textarea" value={form.demanda} rows={4} placeholder="Atualizar demandas" id="demanda" onChange={handleChange}/>
+                </Form.Group>
+              </div>
+                    <Button className="button-modal atualiza" type="submit">
                       Atualizar
                     </Button>
 
-                    <Button variant="danger" onClick={handleClose}>
+                    <Button className="button-modal cancela" onClick={handleClose}>
                       Cancelar
                     </Button>
                 </Form>
@@ -84,7 +85,7 @@ function Demanda(props) {
         </Modal>
 
         
-        <Card style={{ width: '15rem' }} id={props.id}>
+        <Card style={{ width: '15rem' }} id={props.id} className="card-gerenciar">
             {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
             <Card.Body>
                 <Card.Title>{props.nome}</Card.Title>

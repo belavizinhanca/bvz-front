@@ -37,30 +37,32 @@ function CadastroMediador() {
         <section className="form-section">
         <Container className="form-container">
             <h2>Torne-se Um Mediador!</h2>
-            <Form onSubmit={handleSubmit}>
-                <Form.Group>
-                    <Form.Label htmlFor="nome">Nome</Form.Label>
-                    <Form.Control type="text" value={form.nome} placeholder="Nome" id="nome" onChange={handleChange}/>
-                </Form.Group>
+                <Form onSubmit={handleSubmit}>
+                    <div className="inputs-container">
+                    <Form.Group>
+                        <Form.Label htmlFor="nome">Nome</Form.Label>
+                        <Form.Control type="text" value={form.nome} placeholder="Nome" id="nome" onChange={handleChange}/>
+                    </Form.Group>
 
-                <Form.Group>
-                    <Form.Label htmlFor="contato">Contato</Form.Label>
-                    <Form.Control type="text" value={form.contato} placeholder="Contato" id="contato" onChange={handleChange}/>
-                </Form.Group>
+                    <Form.Group>
+                        <Form.Label htmlFor="contato">Contato</Form.Label>
+                        <Form.Control type="text" value={form.contato} placeholder="Contato" id="contato" onChange={handleChange}/>
+                    </Form.Group>
 
-                <Form.Group>
-                    <Form.Label htmlFor="endereco">Endereço</Form.Label>
-                    <Form.Control type="text" value={form.endereco} placeholder="Endereço" id="endereco" onChange={handleChange}/>
-                </Form.Group>
+                    <Form.Group>
+                        <Form.Label htmlFor="endereco">Endereço</Form.Label>
+                        <Form.Control type="text" value={form.endereco} placeholder="Endereço" id="endereco" onChange={handleChange}/>
+                    </Form.Group>
 
-                <Form.Group >
-                    <Form.Label htmlFor="email">E-mail</Form.Label>
-                    <Form.Control type="email" value={form.email} placeholder="Email" id="email" onChange={handleChange}/>
-                </Form.Group>
-                <Form.Group>
-                    <Form.Label htmlFor="senha">Senha</Form.Label>
-                    <Form.Control type="password" value={form.senha} placeholder="Senha" id="senha" onChange={handleChange}/>
-                </Form.Group>
+                    <Form.Group >
+                        <Form.Label htmlFor="email">E-mail</Form.Label>
+                        <Form.Control type="email" value={form.email} placeholder="Email" id="email" onChange={handleChange}/>
+                    </Form.Group>
+                    <Form.Group>
+                        <Form.Label htmlFor="senha">Senha</Form.Label>
+                        <Form.Control type="password" value={form.senha} placeholder="Senha" id="senha" onChange={handleChange}/>
+                    </Form.Group>
+                </div>
                 <Button className="button-enviar" type="submit">
                     Enviar
                 </Button>

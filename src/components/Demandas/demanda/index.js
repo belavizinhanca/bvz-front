@@ -5,7 +5,7 @@ import './Demanda.css'
 
 function Demanda(props) {
     return(
-        <Card style={{ width: '15rem' }}>
+        <Card style={{ width: '15rem' }} className="card-demanda">
                 {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
                 <Card.Body>
                     <Card.Title>{props.nome}</Card.Title>

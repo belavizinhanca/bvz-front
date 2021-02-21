@@ -1,7 +1,7 @@
 .form-section{
     width: 100%;
     background-color: white;
-    margin: 200px 0 100px 0;
+    margin: 150px 0 100px 0;
     color: black;
 }
 
@@ -24,11 +24,17 @@ form{
     width: 100%;
     max-width: 380px;
     background-color: white;
-    padding: 20px;
+    padding: 0px;
     border-radius: 10px;
     color: black;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 5px 1px #ccc;
+    padding: 0;
+    overflow: hidden;
+}
+
+form .inputs-container{
+    padding: 20px;
 }
 
 .form-control:focus{
@@ -40,8 +46,11 @@ form{
     border: none;
     background-color: #E63946;
     transition: 200ms;
+    border-radius: 0;
+    width: 100%;
+    height: 45px;
 }
 
 .button-enviar:hover{
-    background-color: #fc505e;
+    background-color: #333;
 }

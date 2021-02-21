@@ -1,9 +1,11 @@
-.demandas .card{
-    margin: 10px;
+.demandas .card-demanda{
+    box-shadow: none;
+    border: 1px solid rgb(179, 179, 179);
+    height: 320px;
 }
 
 
-.card-text{
+.card-demanda-text{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -15,8 +17,9 @@
     height: 40px;
     text-align: center;
     line-height: 40px;
-    background-color: #E63946;
-    color: white;
+    background-color: transparent;
+    border: 2px solid #E82E2B;
+    color: #000;
     border-radius: 5px;
     font-size: 18px;
     display: inline-block;
@@ -24,7 +27,7 @@
 }
 
 .button:hover{
-    background-color: #fc505e;
+    background-color: #E82E2B;
     text-decoration: none;
     color: white;
 }
