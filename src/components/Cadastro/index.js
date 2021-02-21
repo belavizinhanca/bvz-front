@@ -5,7 +5,7 @@ import './Cadastro.css'
 
 function Cadastro() {
     return(
-        <section className="form-section">
+        <section className="form-section cadastro">
             <Container className="form-container">
                 <h2>Cadastre-se</h2>
                 <Form>

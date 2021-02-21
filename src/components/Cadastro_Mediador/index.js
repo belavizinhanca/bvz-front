@@ -2,6 +2,8 @@ import React from 'react'
 import { Container, Form, Button} from 'react-bootstrap'
 import { useState } from 'react'
 
+import './Cad_Mediador.css'
+
 function CadastroMediador() {
     const [form, setForm] = useState({
         nome: '',
@@ -34,7 +36,7 @@ function CadastroMediador() {
     }
 
     return(
-        <section className="form-section">
+        <section className="form-section cadmediador">
         <Container className="form-container">
             <h2>Torne-se Um Mediador!</h2>
                 <Form onSubmit={handleSubmit}>

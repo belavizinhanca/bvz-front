@@ -5,7 +5,7 @@ import './Contato.css'
 
 function Contato() {
     return(
-        <section className="form-section">
+        <section className="form-section contato">
             <Container className="form-container">
                 <h2>Entre em contato!</h2>
                 <Form>
