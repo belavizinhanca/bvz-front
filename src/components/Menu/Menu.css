@@ -2,14 +2,12 @@
     padding: 0;
     /* height: 70px; */
     align-items: center;
-    box-shadow: 1px 0 5px #000;
-
     background-color: black;  
 }
 
 .navbar-brand img{
     width: 100%;
-    max-width: 280px;
+    max-width: 220px;
 }
 
 .navbar .navbar-nav .nav-link{
@@ -20,8 +18,8 @@
 }
 
 .navbar .navbar-nav .nav-link:hover{
-    border-bottom: 2px solid #E63946;
-    color: rgb(223, 223, 223);
+    border-bottom: 2px solid #EDAF44;
+    color: #EDAF44;
 }
 
 .navbar .navbar-nav .nav-link.link-login{
@@ -35,9 +33,14 @@
 
 .link-login ion-icon{
     padding-right: 5px;
-    color: #edaf44;
+    color: #fff;
 }
 
 .navbar-nav{
     align-items: center;
+}
+
+.navbar-dark .navbar-toggler{
+    border: 1px solid #fff;
+    border-radius: 5px;
 }

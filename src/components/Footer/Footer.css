@@ -1,32 +1,24 @@
+footer{
+    width: 100%;
+    max-width: 100%;
+}
+
 .footer-container{
     width: 100%;
     padding: 20px 20px;
-    background:
-    linear-gradient(
-      rgba(103, 18, 1, 0.6),rgba(103, 18, 1, 0.6)
-    ),
-    url('../images/cardboard-wallpaper-template_1194-6785.jpg');
-    
+    background-color: #000;
 }
 
 .footer-items{
     width: 100%;
     display: flex;
     align-items: center;
-}
-
-.footer-logo a{
-    color: white;
-    font-size: 25px;
-    margin-right: 200px;
-
     justify-content: space-evenly;
-    
 }
 
 .footer-logo a img{
     width: 100%;
-    max-width: 320px;
+    max-width: 280px;
 }
 
 .footer-links ul{
@@ -37,10 +29,19 @@
 
 .footer-links a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 15pt;
+    color: white;
     font-weight: 350;
 
+}
+
+.footer-links .btn-entrar{
+    width: 140px;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+    background-color: #EDAF44;
 }
 
 .footer-links a:hover{

@@ -10,7 +10,6 @@ function Footer() {
             <Container>
                 <div className="footer-items">
                     <div className="footer-logo">
-
                         <a href="/" to="/"><Image src={logo} alt="Logo Bela Vizinhança" /></a>
                     </div>
 
@@ -21,7 +20,7 @@ function Footer() {
                             <li><a href="/mediador" to="/mediador">Mediador</a></li>
                             <li><a href="/doacao" to="/doacao">Doação</a></li>
                             <li><a href="/contato" to="/contato">Contato</a></li>
-                            <li><a href="/entrar" to="/entrar">Entrar</a></li>
+                            <li><a className="btn-entrar" href="/entrar" to="/entrar">Entrar</a></li>
                         </ul>
                     </div>
                 </div>

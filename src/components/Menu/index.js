@@ -7,7 +7,7 @@ import './Menu.css'
 
 function BaseMenu() {
     return(
-        <Navbar fixed="top" expand="lg">
+        <Navbar fixed="top" variant="dark" expand="lg">
         <Container>
 
             <Navbar.Brand href="/" to="/"><Image src={logo} alt="Logo Bela Vizinhança" width="320" /></Navbar.Brand>

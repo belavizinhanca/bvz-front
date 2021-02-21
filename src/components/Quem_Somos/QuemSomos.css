@@ -51,7 +51,7 @@
 .card .foto{
     width: 120px;
     height: 120px;
-    border: 2px solid #E63946;
+    border: 2px solid #E82E2B;
     border-radius: 50%;
     margin-bottom: .75rem;
     display: flex;
@@ -71,7 +71,7 @@
 .card .line{
     width: 80px;
     height: 5px;
-    background-color: #E63946;
+    background-color: #E82E2B;
     border-radius: 40px;
     margin-bottom: .75rem;
     display: inline-block;
@@ -79,11 +79,11 @@
 
 .card-link{
     font-size: 30px;
-    color: #E63946;
+    color: #E82E2B;
 }
 
 .card-link:hover{
-    color: #e6525f;
+    color: #e64f4c;
 }
 
 @media screen and (max-width: 768px){

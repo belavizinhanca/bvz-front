@@ -1,27 +1,33 @@
-.section-demandas h2{
-    margin-top: 20px;
-    text-align: center;
-}
-
-.container-cad-demandas{
-    width: 100%;
+.banner{
     display: flex;
     align-items: center;
-}
-
-.container-cad-demandas h2{
-    max-width: 50%;
-}
-
-.container-cad-demandas .button-demandas{
-    width: 200px;
-    height: 45px;
-    text-align: center;
-    line-height: 45px;
-    background-color: #E63946;
+    justify-content: center;
+    width: 100%;
+    height: 380px;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('.././images/sppattern.png');
+    background-position: center;
+    background-size: cover;
     color: white;
-    border-radius: 5px;
-    font-size: 18px;
+    background-color: #E82E2B;
+}
+
+.icon-demanda{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    top: -40px;
+    right: 48px;
+}
+
+.icon-demanda svg{
+    font-size: 40px;
+    color: #E82E2B;
+    transition: 200ms;
+}
+
+.icon-demanda svg:hover{
+    color: #e64f4c;
 }
 
 .section-demandas .container{
@@ -33,10 +39,12 @@
     width: 100%;
 }
 
-.container-demandas{
+.container-demandas-d{
     width: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
+    top: -120px;
 }
 
 .demandas{
@@ -48,23 +56,20 @@
     align-items: center;
 }
 
-.container-demandas h2{
+.container-demandas-d h2{
     text-align: center;
 }
 
 @media screen and (max-width: 768px){
-    .container-cad-demandas{
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
+    .banner{
+        text-align: center;
+    }
+
+    .icon-demanda{
         justify-content: center;
-    }
-
-    .container-cad-demandas h2{
-        max-width: 100%;
-    }
-
-    .container-cad-demandas, .section-demandas h2{
-        font-size: 30px;
+        margin: 0 auto;
+        display: inline-block;
+        position: initial;
+        margin-bottom: 20px;
     }
 }
