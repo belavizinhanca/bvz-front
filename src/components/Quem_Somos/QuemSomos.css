@@ -40,12 +40,14 @@
 }
 
 .card{
+    background-image: '../images/fundocard.jpg';
     align-items: center;
     text-align: center;
     padding: .75rem;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px #ccc;
+    
 }
 
 .card .foto{

@@ -7,7 +7,7 @@ function Contato() {
     return(
         <section className="form-section contato">
             <Container className="form-container">
-                <h2>Entre em contato!</h2>
+                <h2>Envie-nos um feedback</h2>
                 <Form>
                     <div className="inputs-container">
                         <Form.Group>

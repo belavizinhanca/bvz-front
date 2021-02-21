@@ -38,7 +38,7 @@ function QuemSomos() {
                                 </div>
                                 <Card.Title>Carla</Card.Title>
                                 <div className="line"></div>
-                                <Card.Subtitle className="mb-2 text-muted">carla_agencia@hotmail.com</Card.Subtitle>
+                                <Card.Subtitle className="mb-2 text-muted">Marketing, empreendedorismo, desenvolvimento back-end e estratégia.</Card.Subtitle>
                                 <Card.Link target="_blank" href="https://github.com/carlajb"><FaGithub /></Card.Link>
                                 <Card.Link target="_blank" href="http://linkedin.com/in/carla-janaína-braga-bb62b1196"><FaLinkedin /></Card.Link>
                             </Card.Body>
@@ -51,7 +51,7 @@ function QuemSomos() {
                                 </div>
                                 <Card.Title>Guilherme</Card.Title>
                                 <div className="line"></div>
-                                <Card.Subtitle className="mb-2 text-muted">gui06barboza@gmail.com</Card.Subtitle>
+                                <Card.Subtitle className="mb-2 text-muted">Designer, especialista em Front-end e layoutista. </Card.Subtitle>
                                 <Card.Link target="_blank" href="https://github.com/GuilhermeAlvarez-00"><FaGithub /></Card.Link>
                                 <Card.Link target="_blank" href="https://www.linkedin.com/in/guilherme-alvarez-barboza-44388318b/"><FaLinkedin /></Card.Link>
                             </Card.Body>
@@ -63,7 +63,7 @@ function QuemSomos() {
                                 </div>
                                 <Card.Title>Rilvan</Card.Title>
                                 <div className="line"></div>
-                                <Card.Subtitle className="mb-2 text-muted">felixrilvan@gmail.com</Card.Subtitle>
+                                <Card.Subtitle className="mb-2 text-muted">Marketing e apresentação do produto.</Card.Subtitle>
                                 <Card.Link target="_blank" href="#"><FaGithub /></Card.Link>
                                 <Card.Link target="_blank" href="#"><FaLinkedin /></Card.Link>
                             </Card.Body>
@@ -76,7 +76,7 @@ function QuemSomos() {
                                 </div>
                                 <Card.Title>Roney</Card.Title>
                                 <div className="line"></div>
-                                <Card.Subtitle className="mb-2 text-muted">roney.c.lima@gmail.com</Card.Subtitle>
+                                <Card.Subtitle className="mb-2 text-muted">Líder, controle do projeto, front-end e back-end, identidade visual.</Card.Subtitle>
                                 <Card.Link target="_blank" href="https://github.com/RoneyLima"><FaGithub /></Card.Link>
                                 <Card.Link target="_blank" href="https://www.linkedin.com/in/roneyclima/ "><FaLinkedin /></Card.Link>
                             </Card.Body>
@@ -88,7 +88,7 @@ function QuemSomos() {
                                 </div>
                                 <Card.Title>Vitor</Card.Title>
                                 <div className="line"></div>
-                                <Card.Subtitle className="mb-2 text-muted">v.gabriel.artes@gmail.com</Card.Subtitle>
+                                <Card.Subtitle className="mb-2 text-muted">Especialista Back-end, integração de APIs.</Card.Subtitle>
                                 <Card.Link target="_blank" href="https://github.com/Arickado"><FaGithub /></Card.Link>
                                 <Card.Link target="_blank" href="https://www.linkedin.com/in/Vitor-Gabriel-LA"><FaLinkedin /></Card.Link>
                             </Card.Body>
