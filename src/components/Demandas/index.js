@@ -31,7 +31,7 @@ function Demandas() {
     return(
         <section className="section-demandas">
             <div className="banner">
-                <img src={titulo}/>
+                <h2>Encontre uma causa para ajudar</h2>
             </div>
             <Container>
                 <div className="container-demandas-d">
