@@ -12,14 +12,14 @@ function Login() {
                     <div className="inputs-container">
                         <Form.Group>
                             <Form.Label htmlFor="email">E-mail</Form.Label>
-                            <Form.Control type="email" placeholder="Email" id="email" />
+                            <Form.Control type="email" placeholder="Email" id="email" required/>
                         </Form.Group>
 
                         <Form.Group>
                             <Form.Label htmlFor="senha">Senha</Form.Label>
-                            <Form.Control type="password" placeholder="Senha" id="senha" />
+                            <Form.Control type="password" placeholder="Senha" id="senha" required/>
                             <br></br><p>Se você já é um mediador faça login, ou então </p>
-                            <p><a href="/cadastro" to="/cadastro">Cadastre-se</a></p>
+                            <p><a href="/cadastro-mediador" to="/cadastro-mediador">Cadastre-se</a></p>
                         </Form.Group>
                     </div>
                     <Button className="button-enviar" type="submit">

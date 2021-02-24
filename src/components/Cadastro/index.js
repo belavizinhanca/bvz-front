@@ -12,17 +12,17 @@ function Cadastro() {
                     <div className="inputs-container">
                         <Form.Group>
                             <Form.Label htmlFor="nome">Nome</Form.Label>
-                            <Form.Control type="text" placeholder="nome" id="nome" />
+                            <Form.Control type="text" placeholder="nome" id="nome" required/>
                         </Form.Group>
 
                         <Form.Group>
                             <Form.Label htmlFor="email">E-mail</Form.Label>
-                            <Form.Control type="email" placeholder="Email" id="email" />
+                            <Form.Control type="email" placeholder="Email" id="email" required/>
                         </Form.Group>
 
                         <Form.Group>
                             <Form.Label htmlFor="senha">Senha</Form.Label>
-                            <Form.Control type="password" placeholder="Senha" id="senha" />
+                            <Form.Control type="password" placeholder="Senha" id="senha" required/>
                             <br></br>
                             <a href="/entrar" to="/entrar">Login</a>
                         </Form.Group>
