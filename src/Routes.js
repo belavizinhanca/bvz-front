@@ -36,7 +36,7 @@ function Routes() {
             <Route exact path="/quem-somos"             component={QuemSomos} />
             <Route exact path="/contato"                component={Contato} />
             <Route exact path="/mediador"               component={Mediador} />
-            <Route exact path="/cadastro-mediador"      component={CadastroMediador} />/>
+            <Route exact path="/cadastro-mediador"      component={CadastroMediador} />
             <Route exact path="/doacao"                 component={Demandas} />
             <Route exact path="/cadastrar-demanda"      component={CadDemanda} />
             <Route exact path="/entrar"                 component={Login} />
