@@ -1,0 +1,34 @@
+{/*function CadastroMediador() {
+        const [form, setForm] = useState({
+            nome: '',
+            contato: '',
+            endereco: '',
+            email: '',
+            senha: ''
+        })
+    
+        const [result, setResult] = useState('')
+    
+        const history = useHistory();
+    
+        function handleChange({target}) {
+            const {id, value} = target
+    
+            setForm({ ...form, [id]:value })
+            console.log({ [id]:value })
+        }
+    
+        function handleSubmit(event) {
+            event.preventDefault()
+            fetch('https://bvz-back.herokuapp.com/mediadores', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(form)
+            }).then(res => {
+                setResult(res)
+            })
+    
+            history.push('/doacao')
+        }} */}

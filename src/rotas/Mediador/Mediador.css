@@ -12,7 +12,7 @@
 .container-flex-med.sejamediador{
     max-width: 100%;
     color: white;
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('.././images/image-mediador.jpg');
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../components/images/image-mediador.jpg');
     background-size: cover;
     background-position: center;
 }

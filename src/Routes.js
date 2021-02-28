@@ -1,32 +1,52 @@
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 
-import Home from './components/Home'
-import QuemSomos from './components/Quem_Somos'
-import Mediador from './components/Mediador'
-import CadastroMediador from './components/Cadastro_Mediador'
-import Demandas from './components/Demandas'
-import CadDemanda from './components/Cadastro_Demanda'
-import Contato from './components/Contato'
-import Gerenciar from './components/Gerenciar'
-import Login from './components/Login'
-import Cadastro from './components/Cadastro'
+import { isAuthenticated } from "./components/services/auth";
+
+
+
+
+import Home                 from './rotas/Home'
+import QuemSomos            from './rotas/Quem_Somos'
+import Mediador             from './rotas/Mediador'
+import CadastroMediador     from './rotas/Cadastro_Mediador'
+import Demandas             from './rotas/Demandas'
+import CadDemanda           from './rotas/Cadastro_Demanda'
+import Contato              from './rotas/Contato'
+import Gerenciar            from './rotas/Gerenciar'
+import Login                from './rotas/Login'
+// import Cadastro             from './rotas/Cadastro'
+
+
+const PrivateRoute = ({ component: Component, ...rest }) => (
+    <Route
+      {...rest}
+      render={props =>
+        isAuthenticated() ? (
+          <Component {...props} />) : (<Redirect to={{ pathname: "/", state: { from: props.location } }} />
+        )
+      }
+    />
+  );
 
 function Routes() {
     return(
         <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/quem-somos" component={QuemSomos} />
-            <Route exact path="/contato" component={Contato} />
-            <Route exact path="/mediador" component={Mediador} />
-            <Route exact path="/cadastro-mediador" component={CadastroMediador} />
-            <Route exact path="/doacao" component={Demandas} />
-            <Route exact path="/cadastrar-demanda" component={CadDemanda} />
-            <Route exact path="/entrar" component={Login} />
-            <Route exact path="/cadastro" component={Cadastro} />
-            <Route exact path="/gerenciar" component={Gerenciar} />
+            <Route exact path="/"                       component={Home} />
+            <Route exact path="/quem-somos"             component={QuemSomos} />
+            <Route exact path="/contato"                component={Contato} />
+            <Route exact path="/mediador"               component={Mediador} />
+            <Route exact path="/cadastro-mediador"      component={CadastroMediador} />/>
+            <Route exact path="/doacao"                 component={Demandas} />
+            <Route exact path="/cadastrar-demanda"      component={CadDemanda} />
+            <Route exact path="/entrar"                 component={Login} />
+            {/* <Route exact path="/cadastro"               component={Cadastro} /> /> */}
+            <PrivateRoute exact path="/gerenciar"       component={Gerenciar} />
+            <Route path="*"                             component={() => <h1>Page not found</h1>} />
         </Switch>
     )
 }
 
 export default Routes;
+
+

@@ -2,10 +2,10 @@ import React from 'react'
 import { Container, Carousel } from 'react-bootstrap'
 import { useState } from 'react'
 
-import home from '../images/home.png'
-import image1 from '../images/image1.jpeg'
-import image2 from '../images/image2.jpeg'
-import image3 from '../images/image3.jpeg'
+import home from '../../components/images/home.png'
+import image1 from '../../components/images/image1.jpeg'
+import image2 from '../../components/images/image2.jpeg'
+import image3 from '../../components/images/image3.jpeg'
 
 import './Home.css'
 

@@ -4,7 +4,7 @@ import { Container, OverlayTrigger, Tooltip } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import { BsFillPlusCircleFill } from "react-icons/bs";
 
-import titulo from '../images/hall.png';
+import titulo from '../../components/images/hall.png';
 
 import './Demandas.css'
 import Demanda from './demanda'

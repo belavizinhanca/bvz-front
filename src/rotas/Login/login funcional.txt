@@ -1,0 +1,42 @@
+function Login() {
+
+    const [form, setForm] = useState({
+        username: '',
+        senha: ''
+    })
+
+
+    const [result, setResult] = useState('')
+
+    const history = useHistory();
+
+
+    async function handleLogin(event) {
+        
+        fetch('http://localhost:4000/api/login', {
+            //https://bvz-back.herokuapp.com/api/login
+            
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            }, 
+            body: JSON.stringify(form)
+        }).then(res => {
+            setResult(res)
+            const resJson = res.json()
+            console.log(resJson)
+            
+        }).catch((erro) =>{
+            console.log(erro)
+            history.push('/login')
+        })
+
+        
+    }
+
+    function handleChange({target}) {
+        const {id, value} = target
+
+        setForm({ ...form, [id]:value })
+        console.log({ [id]:value })
+    }
