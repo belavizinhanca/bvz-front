@@ -31,7 +31,7 @@ function BaseMenu() {
                 <Nav.Link href="/" to="/">Home</Nav.Link>
                 <Nav.Link href="/quem-somos" to="/quem-somos">Quem Somos</Nav.Link>
                 <Nav.Link href="/doacao" to="/doacao">Doação</Nav.Link>
-                <Nav.Link href="/mediador" to="/mediador">Mediador</Nav.Link>             
+                <Nav.Link href="/servicos-uteis" to="/servicos-uteis">Serviços</Nav.Link>             
                 <Nav.Link href="/contato" to="/contato">Contato</Nav.Link>
                 <Nav.Link href="/gerenciar" to="/gerenciar">Gerenciar</Nav.Link>
                 <Nav.Link href="/app" to="/app">App</Nav.Link>
