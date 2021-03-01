@@ -4,7 +4,6 @@ import { useState } from 'react'
 
 import home from '../../components/images/home.png'
 import image1 from '../../components/images/image1.jpeg'
-import image2 from '../../components/images/image2.jpeg'
 import image3 from '../../components/images/image3.jpeg'
 
 import './Home.css'
@@ -33,13 +32,6 @@ function Home() {
                         className="d-block w-100"
                         src={image1}
                         alt="First slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={image2}
-                        alt="Second slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>

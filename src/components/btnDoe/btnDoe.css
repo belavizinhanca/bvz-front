@@ -1,0 +1,73 @@
+#botao_flutuante {
+    background-color: #dc3545;
+    color:#000;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    z-index: 1;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: 0.3s;
+    text-decoration: none;
+    flex-direction: column;
+  }
+  
+  #botao_flutuante:hover {
+    color: #fff;
+    background-color:#edaf44;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    z-index: 1;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  #botao_flutuante p {
+    color: white;
+    margin-bottom: 0;
+  }
+  
+  #botao_flutuante:hover p {
+    color: #000;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 500px) {
+    #botao_flutuante {
+      background-color: #fff;
+      color: #000;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      position: fixed;
+      bottom: 5%;
+      right: 2%;
+      z-index: 1;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      font-size: 16px;
+      transition: 0.3s;
+      text-decoration: none;
+      flex-direction: column;
+    }
+  
+  }

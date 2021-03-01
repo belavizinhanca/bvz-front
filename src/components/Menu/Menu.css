@@ -1,8 +1,9 @@
+
 .navbar{
     padding: 0;
-    /* height: 70px; */
     align-items: center;
     background-color: black;  
+
 }
 
 .navbar-brand img{
@@ -43,4 +44,17 @@
 .navbar-dark .navbar-toggler{
     border: 1px solid #fff;
     border-radius: 5px;
+}
+
+.dropdown-menu {
+    width: 500px;
+    border-radius: 0%;
+}
+
+.inputs-container {
+    border: 0px;
+}
+
+form{
+    border: 0px ;
 }

@@ -35,16 +35,7 @@ function Demandas() {
             </div>
             <Container>
                 <div className="container-demandas-d">
-                    <div className="icon-demanda">
-                        <OverlayTrigger
-                                placement="left"
-                                delay={{ show: 250, hide: 400 }}
-                                overlay={renderTooltip}>
-                        <a href="/cadastrar-demanda" to="/cadastrar-demanda" title="Cadastar demanda">    
-                            <BsFillPlusCircleFill />
-                        </a>
-                        </OverlayTrigger>
-                    </div>
+
                     <div className="demandas">
                         {demanda && demanda.map(item => <Demanda nome={item.nome} perfil={item.perfil} demanda={item.demanda} onClick={doacao}/>)}
                     </div>
@@ -57,9 +48,3 @@ function Demandas() {
 export default Demandas;
 
 
-const renderTooltip = (props) => (
-    <Tooltip id="icon-demanda" {...props}>
-      Cadatre uma nova demanda
-    </Tooltip>
-  );
-  

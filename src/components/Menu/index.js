@@ -1,12 +1,10 @@
 import React from 'react'
-import Button from '@material-ui/core/Button';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
 import { withRouter } from 'react-router-dom'
 import { Navbar, Nav, NavDropdown, Container, Image } from 'react-bootstrap'
 import logo from '../images/logobvznovoLinha.png'
 
 import './Menu.css'
+import Poplogin from '../poplogin';
 
 function BaseMenu() {
 
@@ -42,9 +40,7 @@ function BaseMenu() {
                 <Nav.Link href="/contato" to="/contato">Contato</Nav.Link>
                 <Nav.Link href="/gerenciar" to="/gerenciar">Gerenciar</Nav.Link>
                 <Nav.Link href="/app" to="/app">App</Nav.Link>
-                <Nav.Link href="/entrar" to="/entrar" className="link-login">
-                    <ion-icon className="sign-in" size="large" name="person-circle-outline" id="sign-in" /> Entrar
-                </Nav.Link>
+                <Poplogin /> 
                 </Nav>
             </Navbar.Collapse>
         </Container>

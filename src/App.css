@@ -2,24 +2,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 body, html{
   padding-top: 25px;
-  background: #2d2b2d;
   font-family: 'Candara', 'HelveticaNeue', 'Helvetica Neue';
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   height: 100%;
   width: 100%;
 }
-
-section {
-  background-color: #2d2b2d;
-  
-}
+/* 
 p, h1,  h2,  h3{
-  color: aliceblue;
+  color: #2d2b2d;
+} */
+/* 
+header{
+  position: sticky;
+  display: flex;
+  top: 0;
+  position: -webkit-sticky;
 }
-        
+         */
+
+button  {
+  border-radius: -50;
+}
