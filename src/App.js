@@ -15,9 +15,9 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <header>
-        <div>
-        <Menumidias />
+        <div>       
         <Menu />
+        <Menumidias />
         </div>
       </header>
       <main>

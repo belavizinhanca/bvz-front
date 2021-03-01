@@ -21,7 +21,7 @@ function BaseMenu() {
     
 
     return(
-        <Navbar fixed="top" variant="dark" expand="lg">
+        <Navbar className="menu-major" fixed="top" variant="dark" expand="lg">
         <Container>
 
             <Navbar.Brand href="/" to="/"><Image src={logo} alt="Logo Bela Vizinhança" width="320" /></Navbar.Brand>
@@ -35,7 +35,7 @@ function BaseMenu() {
                 <Nav.Link href="/contato" to="/contato">Contato</Nav.Link>
                 <Nav.Link href="/gerenciar" to="/gerenciar">Gerenciar</Nav.Link>
                 <Nav.Link href="/app" to="/app">App</Nav.Link>
-                <Poplogin /> 
+             
                 </Nav>
             </Navbar.Collapse>
         </Container>

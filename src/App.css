@@ -12,19 +12,3 @@ body{
   height: 100%;
   width: 100%;
 }
-/* 
-p, h1,  h2,  h3{
-  color: #2d2b2d;
-} */
-/* 
-header{
-  position: sticky;
-  display: flex;
-  top: 0;
-  position: -webkit-sticky;
-}
-         */
-
-button  {
-  border-radius: -50;
-}
