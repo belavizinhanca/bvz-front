@@ -1,6 +1,7 @@
 
 import React, { useRef, useState } from 'react'
 import { Overlay, Popover, Button, Form } from 'react-bootstrap'
+import './poplogin.css'
 
 
 
@@ -16,7 +17,7 @@ export default function Poplogin() {
   
     return (
       <div ref={ref}>
-        <Button size="sm" variant="link" onClick={handleClick}><ion-icon className="sign-in" size="large" name="person-circle-outline" id="sign-in" /> Entrar</Button>
+        <Button className="d-inline-flex align-items-center" size="sm" variant="link" onClick={handleClick}><ion-icon className="sign-in" size name="person-circle-outline" id="sign-in" /> Entrar</Button>
   
         <Overlay
           show={show}
@@ -47,7 +48,6 @@ export default function Poplogin() {
                         Entrar
                     </Button>
                 </Form>
-
             </Popover.Content>
           </Popover>
         </Overlay>

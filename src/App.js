@@ -16,6 +16,7 @@ function App() {
     <div className="App">
       <header>
         <div>
+        <Menumidias />
         <Menu />
         </div>
       </header>

@@ -3,17 +3,19 @@ import { withRouter } from 'react-router-dom'
 import { Navbar, Nav, Container, Image } from 'react-bootstrap'
 
 import './menumidias.css'
+import Poplogin from '../poplogin'
 
 function BaseMenu() {
 
    
 
     return(
-        <Navbar  variant="light" expand="lg">
+        <Navbar fixed="top" variant="light" expand="lg">
         <Container>
-            
-                    <ion-icon className="sign-in" size="large" name="person-circle-outline" id="sign-in" /> 
-        </Container>
+            <Nav className="ml-auto">
+                <Poplogin /> 
+            </Nav>
+        </Container>   
         </Navbar>
     )
 }
