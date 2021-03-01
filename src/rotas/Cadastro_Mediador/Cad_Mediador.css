@@ -1,7 +1,56 @@
-.form-section.cadmediador{
-    width: 100%;
-    height: 750px;
+:root{
+    --colorRed: #E82E2B;
+}
+
+form.f-mediador{
+    width: 380px;
+    margin: 0 auto;
+}
+
+.f-mediador input.form-control{
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid var(--colorRed);
+}
+
+.section-mediador{
+    display: flex;
+}
+
+.container-flex-med{
+    width: 50%;
+    height: 580px;
+    display: flex;
+    align-items: center;
+}
+
+.container-flex-med.sejamediador{
+    max-width: 100%;
+    color: white;
     background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../components/images/image-mediador.jpg');
-    background-position: center;
     background-size: cover;
+    background-position: center;
+}
+
+.container-flex-med .button{
+    background-color: #E82E2B;
+    align-self: start;
+    color: white;
+    border: none;
+}
+
+.container-flex-med .button:hover{
+    background-color: #e64f4c;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px){
+    .section-mediador{
+        flex-direction: column;
+    }
+
+    .container-flex-med{
+        width: 100%;
+    }
 }

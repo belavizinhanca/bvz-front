@@ -25,7 +25,7 @@
     color: #edaf44;
 }
 
-form{
+.form{
     width: 100%;
     max-width: 380px;
     background-color: white;
@@ -37,7 +37,7 @@ form{
     /* overflow: hidden; */
 }
 
-form .inputs-container{
+.form .inputs-container{
     padding: 20px;
 }
 
