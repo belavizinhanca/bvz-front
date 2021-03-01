@@ -58,3 +58,7 @@
         align-items: center;
     }
 }
+
+.d-block    {
+    width: 400px;
+}

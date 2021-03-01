@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Card, Image } from 'react-bootstrap'
-import { FaGithub, FaLinkedin, FaUser } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 import carla from '../../components/images/time/Carla.jpg';
 import roney from '../../components/images/time/Roney2.jpg';
