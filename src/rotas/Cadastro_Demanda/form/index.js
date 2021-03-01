@@ -37,7 +37,6 @@ function CadDemanda() {
     return(
         <section className="form-section">
             <Container className="form-container">
-                <h2>Cadastrar demanda</h2>
                 <Form onSubmit={handleSubmit}>
                     <div className="inputs-container">
                         <Form.Group>

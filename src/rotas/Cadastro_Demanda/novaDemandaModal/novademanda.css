@@ -1,0 +1,15 @@
+.container{
+    align-items: center;
+    justify-content: center;
+}
+.btn-nova-demanda{
+    align-self: center;
+    padding-top: 50px;
+
+}
+
+.h4{
+    color: #edaf44;
+    justify-content: center;
+    padding-left: 20px;
+}

@@ -11,7 +11,7 @@ import QuemSomos            from './rotas/Quem_Somos'
 import Mediador             from './rotas/Mediador'
 import CadastroMediador     from './rotas/Cadastro_Mediador'
 import Demandas             from './rotas/Demandas'
-import CadDemanda           from './rotas/Cadastro_Demanda'
+// import CadDemanda           from './rotas/Cadastro_Demanda'
 import Contato              from './rotas/Contato'
 import Gerenciar            from './rotas/Gerenciar'
 import Login                from './rotas/Login'
@@ -38,10 +38,11 @@ function Routes() {
             <Route exact path="/mediador"               component={Mediador} />
             <Route exact path="/cadastro-mediador"      component={CadastroMediador} />
             <Route exact path="/doacao"                 component={Demandas} />
-            <Route exact path="/cadastrar-demanda"      component={CadDemanda} />
+            {/* <Route exact path="/cadastrar-demanda"      component={CadDemanda} /> */}
             <Route exact path="/entrar"                 component={Login} />
             {/* <Route exact path="/cadastro"               component={Cadastro} /> /> */}
-            <PrivateRoute exact path="/gerenciar"       component={Gerenciar} />
+            {/* depois mudar para PrivateRoute */}
+            <Route exact path="/gerenciar"       component={Gerenciar} />
             <Route path="*"                             component={() => <h1>Page not found</h1>} />
         </Switch>
     )

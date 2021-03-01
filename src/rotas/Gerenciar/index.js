@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap'
 
 import './Gerenciar.css'
 import Demanda from './demanda'
+import NovaDemanda from '../Cadastro_Demanda/novaDemandaModal'
 
 function Gerenciar() {
     const [demanda, setDemanda] = useState()
@@ -21,6 +22,7 @@ function Gerenciar() {
     return(
         <section className="section-gerenciar">
             <Container>
+                <NovaDemanda />
                 <h2>Gerenciar Demandas</h2>
 
                 <div className="container-demandas">

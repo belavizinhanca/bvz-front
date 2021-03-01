@@ -1,6 +1,6 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
-import { Navbar, Nav, NavDropdown, Container, Image } from 'react-bootstrap'
+import { Navbar, Nav, Container, Image } from 'react-bootstrap'
 import logo from '../images/logobvznovoLinha.png'
 
 import './Menu.css'
@@ -30,13 +30,8 @@ function BaseMenu() {
                 <Nav className="ml-auto">
                 <Nav.Link href="/" to="/">Home</Nav.Link>
                 <Nav.Link href="/quem-somos" to="/quem-somos">Quem Somos</Nav.Link>
-    
-                <NavDropdown anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} title="Como Ajudar?" id="basic-nav-dropdown" onMouseOut={handleClose} onMouseOver={handleClick}>
-                    <NavDropdown.Item href="/mediador" to="/mediador">Mediador</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="/doacao" to="/doacao">Doação</NavDropdown.Item>
-                </NavDropdown>
-                
+                <Nav.Link href="/doacao" to="/doacao">Doação</Nav.Link>
+                <Nav.Link href="/mediador" to="/mediador">Mediador</Nav.Link>             
                 <Nav.Link href="/contato" to="/contato">Contato</Nav.Link>
                 <Nav.Link href="/gerenciar" to="/gerenciar">Gerenciar</Nav.Link>
                 <Nav.Link href="/app" to="/app">App</Nav.Link>
