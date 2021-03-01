@@ -2,16 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Maven Pro', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
 }
 
 body, html{
   padding-top: 25px;
   background: #2d2b2d;
-  font-family: 'Maven Pro', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Candara', 'HelveticaNeue', 'Helvetica Neue';
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   height: 100%;
   width: 100%;
+}
+
+section {
+  background-color: #2d2b2d;
+  
+}
+p, h1,  h2,  h3{
+  color: aliceblue;
 }
         
