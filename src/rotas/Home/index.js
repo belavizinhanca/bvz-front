@@ -3,8 +3,7 @@ import { Container, Carousel } from 'react-bootstrap'
 import { useState } from 'react'
 
 import home from '../../components/images/home.png'
-import image1 from '../../components/images/image1.jpeg'
-import image3 from '../../components/images/image3.jpeg'
+import imgHome from '../../components/images/contatobg.jpg'
 
 import './Home.css'
 
@@ -42,22 +41,18 @@ function Home() {
                     </div>
 
                     <div className="img-container">
-                        <div className="img-provisorio">
-                            
-                        </div>
+                        <img src={imgHome} />
                     </div>
                 </div>
 
-                <div className="container-flex" style={{flexDirection: 'row-reverse'}}>
+                <div className="container-flex row-reverse">
                     <div className="text-container">
                         <h2>Nome do projeto</h2>
                         <p>Conteudo do projeto...</p>
                     </div>
 
                     <div className="img-container">
-                        <div className="img-provisorio">
-
-                        </div>
+                        <img src={imgHome} />
                     </div>
                 </div>
             </Container>

@@ -4,7 +4,7 @@
 
 .section-home{
     width: 100%;
-    height: 400px;
+    padding: 120px 0;
     background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../../components/images/contatobg.jpg');
     background-size: cover;
     background-position: center;
@@ -64,7 +64,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px 0;
+    padding: 80px 2%;
+}
+
+.container-flex.row-reverse{
+    flex-direction: row-reverse;
 }
 
 .title-projetos{
@@ -73,10 +77,14 @@
     padding: 40px 0 0 0;
 }
 
-.img-container .img-provisorio{
-    width: 380px;
-    height: 300px;
-    background-color: #ccc;
+.img-container{
+    width: 100%;
+    max-width: 380px;
+}
+
+.img-container img{
+    width: 100%;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 768px){
@@ -93,6 +101,14 @@
     .container-flex-home.text{
         align-items: center;
     
+    }
+
+    .container-flex-home.text h2{
+        font-size: 30px;
+    }
+
+    .container-flex, .container-flex, .container-flex.row-reverse{
+        flex-direction: column;
     }
 }
 
