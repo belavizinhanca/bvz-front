@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body, html{
+body{
   padding-top: 25px;
   font-family: 'Candara', 'HelveticaNeue', 'Helvetica Neue';
   text-rendering: optimizeLegibility !important;
