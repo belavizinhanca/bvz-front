@@ -1,5 +1,10 @@
+:root{
+  --colorRed: #E52931;
+}
+
+
 #botao_flutuante {
-    background-color: #dc3545;
+    background-color: var(--colorRed);
     color:#000;
     width: 75px;
     height: 75px;
