@@ -11,11 +11,9 @@ function BaseMenu() {
 
     return(
         <Navbar fixed="top" variant="light" expand="lg">
-        <Container>
-            <Nav className="ml-auto">
-                <Poplogin /> 
-            </Nav>
-        </Container>   
+            <div className="btn-login">
+            <Nav className="ml-auto"><Poplogin /> </Nav>
+            </div> 
         </Navbar>
     )
 }
