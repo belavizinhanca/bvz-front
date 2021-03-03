@@ -15,7 +15,7 @@ function Contato() {
         <section className="form-section contato">
             <Container className="form-container">
                 <h2>Envie-nos um feedback</h2>
-                <Form>
+                <Form className="form">
                     <div className="inputs-container">
                         <Form.Group>
                             <Form.Label htmlFor="nome">Nome</Form.Label>

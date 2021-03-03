@@ -37,10 +37,9 @@ class CadastroMediador extends Component {
     render(){
     return(    
         
-        <section className="form-section cadmediador">
-        <Container className="form-container">
-            <h2>Torne-se Um Mediador!</h2>
-                <Form onSubmit={this.handleCadastro}>
+        <section className="section-mediador">
+            <div className="container-flex-med sejamediador">
+            <Form onSubmit={this.handleCadastro} className="f-mediador">
                 {this.state.error && <p>{this.state.error}</p>}
                     <div className="inputs-container">
                     <Form.Group>
@@ -71,8 +70,13 @@ class CadastroMediador extends Component {
                     Enviar
                 </Button>
             </Form>
-        </Container>
-        {/* {result && result.ok && <p>Cadastro Concluido!</p>} */}
+            </div>
+        <div className="container-flex-med">
+            <Container className="mediador">
+                <h2>O que é um Mediador?</h2>
+                <p>Os mediadores são aqueles que irão oferecer ajuda as pessoas que moram na rua, acompanhando a situação delas e comunicando as suas necessidades.</p>
+            </Container>
+        </div>
     </section>
     )}
 }

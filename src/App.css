@@ -5,10 +5,16 @@
 }
 
 body{
-  padding-top: 70px;
+  padding-top: 125px;
   font-family: 'Candara', 'HelveticaNeue', 'Helvetica Neue';
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   height: 100%;
   width: 100%;
+}
+
+@media screen and (max-width: 990px){
+  body{
+    padding-top: 105px;
+  }
 }
