@@ -2,14 +2,14 @@ import React from 'react'
 import { Container, Card, Image } from 'react-bootstrap'
 import { FaGithub, FaLinkedin, FaUser } from 'react-icons/fa'
 
-import carla from '../images/time/Carla.jpg';
-import roney from '../images/time/Roney2.jpg';
-import guilherme from '../images/time/Guilherme.jpg';
-import vitor from '../images/time/Vitor.jpeg';
-import rilvan from '../images/time/Rilvan.jpeg';
+import carla from '../../components/images/time/Carla.jpg';
+import roney from '../../components/images/time/Roney.jpg';
+import guilherme from '../../components/images/time/Guilherme.jpg';
+import vitor from '../../components/images/time/Vitor.jpeg';
+import rilvan from '../../components/images/time/Rilvan.jpeg';
 
 import './QuemSomos.css'
-import missao from '../images/missao.jpeg'
+import missao from '../../components/images/missao.jpeg'
 
 function QuemSomos() {
     return(
