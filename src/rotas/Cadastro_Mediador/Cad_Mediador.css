@@ -1,22 +1,26 @@
+.section-mediador{
+    display: flex;
+    
+}
 :root{
     --colorRed: #E82E2B;
 }
 
 form.f-mediador{
-    width: 380px;
+    width: 350px;
+    max-width: 80%;
     margin: 0 auto;
+    padding-bottom: 200px;
 }
 
 .f-mediador input.form-control{
-    background-color: transparent;
+    background-color: #f5f5f5;
     border: none;
     border-radius: 0;
     border-bottom: 2px solid var(--colorRed);
 }
 
-.section-mediador{
-    display: flex;
-}
+
 
 .container-flex-med{
     width: 50%;
@@ -53,4 +57,13 @@ form.f-mediador{
     .container-flex-med{
         width: 100%;
     }
+}
+
+.titulo-cadastro{
+    display: flex;
+    flex:auto;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 30px;
 }

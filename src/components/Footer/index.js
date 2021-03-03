@@ -11,7 +11,7 @@ function Footer() {
                 <div className="footer-items">
 
                     <div className="footer-news">
-                        <Form>
+                        <Form className="news-form">
                             <Form.Row className="align-items-center">
                                 <Col sm={6} className="my-1">
                                 <Form.Label htmlFor="inlineFormInputName" srOnly>

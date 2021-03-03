@@ -31,28 +31,30 @@ function Home() {
         <section className="section-projetos">
             <Container className="container-projetos">
                 <div className="title-projetos">
-                    <h2>Conheça Os Projetos Da Região</h2>
+                    <h2>Entendendo a Realidade</h2>
                 </div>
 
                 <div className="container-flex">
                     <div className="text-container">
-                        <h2>Nome do projeto</h2>
-                        <p>Conteudo do projeto...</p>
+                    <h2>'É horrível dormir com sede': moradores de rua de SP sofrem em cidade sem bebedouros</h2>
+                        <p>A reportagem da BBC News Brasil entrevistou dezenas de moradores de rua para saber o que eles fazem para conseguir água em São Paulo.
+                        Com poucas opções para conseguir água por conta própria - como nascentes e torneiras externas de alguns prédios públicos -, muitos dependem da sorte e da ajuda de voluntários para ter acesso a água limpa.</p>
                     </div>
 
                     <div className="img-container">
-                        <img src={imgHome} />
+                    <iframe width="327" height="209" src="https://www.youtube.com/embed/EsPpfCZPBhQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
 
                 <div className="container-flex row-reverse">
                     <div className="text-container">
-                        <h2>Nome do projeto</h2>
-                        <p>Conteudo do projeto...</p>
+                        <h2>MORAR NA RUA</h2>
+                        <p>Conversamos com diversas pessoas que moram na rua para entender como é a vida delas. Alguns estão ali por escolha. A maioria, por falta de opção. Histórias que merecem a nossa atenção.</p>
+                        
                     </div>
 
                     <div className="img-container">
-                        <img src={imgHome} />
+                    <iframe width="327" height="209" src="https://www.youtube.com/embed/8XRm7pXI9z8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </Container>

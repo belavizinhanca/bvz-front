@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Card, Image } from 'react-bootstrap'
+import { Container, Card, Image,Jumbotron } from 'react-bootstrap'
 import { FaGithub, FaLinkedin, FaUser } from 'react-icons/fa'
 
 import carla from '../../components/images/time/Carla.jpg';
@@ -14,24 +14,25 @@ import missao from '../../components/images/missao.jpeg'
 function QuemSomos() {
     return(
         <section className="section-quemsomos">
-            <Container className="container-quemsomos">
-                <div className="container-goal">
-                    <div className="container-flex-qs text">
-                        <h2>Nossa Missão</h2>
-                        <p>Através da Plataforma Bela vizinhança ajudar moradores de rua situados na região da Bela vista. Incentivando moradores residenciais a criar uma conexão com moradores de rua, para entender quais suas necessidades reais. Assim minimizando suas dores. A Plataforma é de fácil acesso e simples funcionalidade, para facilitar quem quer ajudar o próximo.</p>
-                    </div>
+            <Jumbotron className="titulo" fluid>
+                    <h1>Nossa Missão</h1>                
+            </Jumbotron>
+            <Jumbotron className="fluid text-mission" fluid>
+                <Container>
+                    <p>Através da Plataforma Bela vizinhança ajudar moradores de rua situados na região da Bela vista. Incentivando moradores residenciais a criar uma conexão com moradores de rua, para entender quais suas necessidades reais. Assim minimizando suas dores. A Plataforma é de fácil acesso e simples funcionalidade, para facilitar quem quer ajudar o próximo.</p>
 
-                    <div className="container-flex-qs">
-                        <img src={missao} alt="Imagem Objetivo" />
-                    </div>
-                </div>
-
-                <div className="container-depo">
-                    <h2>O que fazemos</h2>
+                </Container>
+            </Jumbotron>
+                <Jumbotron className="vision-text" fluid>
+                    <Container>
+                    <h2>Somos a Ponte de Ligação entre Voluntários e Moradores de Rua</h2>
                             <p>Os interessados em ajudar efetuam o cadastro em nossa plataforma se tornando Mediadores, que por sua vez fica responsável em cadastrar moradores de rua, necessidades dos moradores de rua registrados na plataforma.</p>
                             <p>Moradores da região e interessados em ajudar podem efetuar as doações de forma direta, através de um mediador ou através de instituições parceiras com o projeto, dependendo da preferência do doador ou da melhor forma de receber a doação do morador de rua.</p>
                             <p>Através de um meio tecnológico buscamos dar mais visibilidade e ajudar moradores de rua a suprir suas necessidades, alêm de expandir parcerias, incentivar pessoas a ajudarem o próximo e facilitar como meio aqueles que gostariam de ajudar, mas não sabiam como.</p>
-                </div>
+                    </Container>
+                </Jumbotron>
+            <Container className="container-quemsomos">
+                            
 
                 <div className="container-team">
                     <h2>Nossa Equipe</h2>
