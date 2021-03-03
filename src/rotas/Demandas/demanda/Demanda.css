@@ -5,11 +5,23 @@
 }
 
 
-.card-demanda-text{
+.card-text, .card-demanda-text{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
+}
+
+.card-title{
+    height: 25px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.card-text{
+    height: 45px;
 }
 
 .button{
