@@ -1,6 +1,9 @@
 .container-goal{
     display: flex;
     align-items: center;
+    width: auto;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .container-flex-qs{
@@ -13,11 +16,25 @@
 
 .container-flex-qs.text{
     align-items: flex-start;
+    margin: 10px;
+    color: #000;
 }
 
 .container-flex-qs img{
     width: 100%;
     max-width: 340px;
+}
+
+.container-depo{
+    align-items: center;
+    margin: 5px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container-depo p{
+    color: #000;
+    text-indent: 8px;
 }
 
 .container-team{
@@ -51,8 +68,8 @@
 }
 
 .card .foto{
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border: 2px solid #E82E2B;
     border-radius: 50%;
     margin-bottom: .75rem;
@@ -64,8 +81,8 @@
 }
 
 .foto-perfil{
-    
-    height: 220px;
+    width: 171px;
+    height: 180px;
     align-self: center;
 }
 

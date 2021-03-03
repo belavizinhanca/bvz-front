@@ -1,15 +1,15 @@
 import React from 'react'
 import { Container, Card, Image } from 'react-bootstrap'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaUser } from 'react-icons/fa'
 
-import carla from '../../components/images/time/Carla.jpg';
-import roney from '../../components/images/time/Roney2.jpg';
-import guilherme from '../../components/images/time/Guilherme.jpg';
-import vitor from '../../components/images/time/Vitor.jpeg';
-import rilvan from '../../components/images/time/Rilvan.jpeg';
+import carla from '../images/time/Carla.jpg';
+import roney from '../images/time/Roney2.jpg';
+import guilherme from '../images/time/Guilherme.jpg';
+import vitor from '../images/time/Vitor.jpeg';
+import rilvan from '../images/time/Rilvan.jpeg';
 
 import './QuemSomos.css'
-import goal from '../../components/images/goal.png'
+import missao from '../images/missao.jpeg'
 
 function QuemSomos() {
     return(
@@ -17,13 +17,20 @@ function QuemSomos() {
             <Container className="container-quemsomos">
                 <div className="container-goal">
                     <div className="container-flex-qs text">
-                        <h2>Nosso Objetivo</h2>
-                        <p>Usar a Plataforma Bela vizinhança para ajudar moradores de rua situado na Bela vista. Incentivando moradores residenciais a criar uma conexão com moradores de rua, para entender quais suas necessidades real. Assim minimizando suas dores. A Plataforma é de fácil acesso e simples funcionalidade, para facilitar quem quer ajudar o próximo.</p>
+                        <h2>Nossa Missão</h2>
+                        <p>Através da Plataforma Bela vizinhança ajudar moradores de rua situados na região da Bela vista. Incentivando moradores residenciais a criar uma conexão com moradores de rua, para entender quais suas necessidades reais. Assim minimizando suas dores. A Plataforma é de fácil acesso e simples funcionalidade, para facilitar quem quer ajudar o próximo.</p>
                     </div>
 
                     <div className="container-flex-qs">
-                        <img src={goal} alt="Imagem Objetivo" />
+                        <img src={missao} alt="Imagem Objetivo" />
                     </div>
+                </div>
+
+                <div className="container-depo">
+                    <h2>O que fazemos</h2>
+                            <p>Os interessados em ajudar efetuam o cadastro em nossa plataforma se tornando Mediadores, que por sua vez fica responsável em cadastrar moradores de rua, necessidades dos moradores de rua registrados na plataforma.</p>
+                            <p>Moradores da região e interessados em ajudar podem efetuar as doações de forma direta, através de um mediador ou através de instituições parceiras com o projeto, dependendo da preferência do doador ou da melhor forma de receber a doação do morador de rua.</p>
+                            <p>Através de um meio tecnológico buscamos dar mais visibilidade e ajudar moradores de rua a suprir suas necessidades, alêm de expandir parcerias, incentivar pessoas a ajudarem o próximo e facilitar como meio aqueles que gostariam de ajudar, mas não sabiam como.</p>
                 </div>
 
                 <div className="container-team">
