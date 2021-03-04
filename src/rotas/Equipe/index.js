@@ -2,7 +2,6 @@ import React from 'react'
 import { Card, Image } from 'react-bootstrap'
 import './Equipe.css'
 import { FaGithub, FaLinkedin, FaUser } from 'react-icons/fa'
-
 import carla from '../../components/images/time/Carla.jpg';
 import roney from '../../components/images/time/Roney.jpg';
 import guilherme from '../../components/images/time/Guilherme.jpg';
