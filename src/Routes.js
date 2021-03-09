@@ -17,6 +17,7 @@ import Gerenciar            from './rotas/Gerenciar'
 import Login                from './rotas/Login'
 // import Cadastro             from './rotas/Cadastro'
 import Uteis                from './rotas/Uteis'
+import Equipe               from './rotas/Equipe'
 
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
@@ -45,6 +46,7 @@ function Routes() {
             {/* <Route exact path="/cadastro"           component={Cadastro} /> /> */}
             {/* depois mudar para PrivateRoute */}
             <Route exact path="/gerenciar"              component={Gerenciar} />
+            <Route exact path="/equipe"              component={Equipe} />
             <Route path="*"                             component={() => <h1>Page not found</h1>} />
         </Switch>
     )

@@ -1,0 +1,15 @@
+.container-equipe{
+    width: 100%;
+    height: 600px;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../components/images/sppattern.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-cards-equipe{
+    display: flex;
+    margin-top: -100px;
+}
