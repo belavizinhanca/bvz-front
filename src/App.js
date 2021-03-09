@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css?55496874'
+import './App.css'
 import { BrowserRouter } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 

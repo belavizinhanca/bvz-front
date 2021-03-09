@@ -20,7 +20,7 @@
 
 .vision-text{
     background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../../components/images/missao.jpeg');
-    opacity: 80%;
+    opacity: 0.8;
     background-size: cover;
     color: white;
 }

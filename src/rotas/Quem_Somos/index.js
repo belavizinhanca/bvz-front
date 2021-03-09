@@ -29,8 +29,8 @@ function QuemSomos() {
                             <p>Os interessados em ajudar efetuam o cadastro em nossa plataforma se tornando Mediadores, que por sua vez fica responsável em cadastrar moradores de rua, necessidades dos moradores de rua registrados na plataforma.</p>
                             <p>Moradores da região e interessados em ajudar podem efetuar as doações de forma direta, através de um mediador ou através de instituições parceiras com o projeto, dependendo da preferência do doador ou da melhor forma de receber a doação do morador de rua.</p>
                             <p>Através de um meio tecnológico buscamos dar mais visibilidade e ajudar moradores de rua a suprir suas necessidades, alêm de expandir parcerias, incentivar pessoas a ajudarem o próximo e facilitar como meio aqueles que gostariam de ajudar, mas não sabiam como.</p>
-                    </Container>
-                </Jumbotron>
+                   </Container>
+            </Jumbotron>
             <Container className="container-quemsomos">
                             
 
