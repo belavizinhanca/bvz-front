@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import { Navbar, Nav, Container, Image } from 'react-bootstrap'
 import logo from '../images/logobvznovoLinha.png'
@@ -6,20 +6,11 @@ import logo from '../images/logobvznovoLinha.png'
 import './Menu.css'
 import Poplogin from '../poplogin';
 
-function BaseMenu() {
-
-    const [anchorEl, setAnchorEl] = React.useState('');
-
-    const handleClick = (event) => {
-      setAnchorEl(event.currentTarget);
-    };
+ class BaseMenu extends Component {
   
-    const handleClose = () => {
-      setAnchorEl(null);
-    };
 
     
-
+render(){
     return(
         <Navbar className="menu-major" fixed="top" variant="dark" expand="lg">
         <Container>
@@ -33,7 +24,7 @@ function BaseMenu() {
                 <Nav.Link href="/doacao" to="/doacao">Doação</Nav.Link>
                 <Nav.Link href="/servicos-uteis" to="/servicos-uteis">Serviços</Nav.Link>             
                 <Nav.Link href="/contato" to="/contato">Contato</Nav.Link>
-                <Nav.Link href="/gerenciar" to="/gerenciar">Gerenciar</Nav.Link>
+                <Nav.Link show="false" href="/gerenciar" to="/gerenciar">Gerenciar</Nav.Link>
                 <Nav.Link href="/app" to="/app">App</Nav.Link>
              
                 </Nav>
@@ -41,7 +32,7 @@ function BaseMenu() {
         </Container>
         </Navbar>
     )
-}
+}}
 
 const Menuex = withRouter(BaseMenu)
 
