@@ -1,47 +1,30 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 import { withRouter } from 'react-router-dom'
 import { Navbar, Nav, Container, Image } from 'react-bootstrap'
 
-import api from "../../components/services/api";
 import { TOKEN_KEY, getToken } from "../../components/services/auth";
 
 import './menumidias.css'
 import Poplogin from '../poplogin'
 
- class BaseMenu extends React.Component {
-    constructor(props) {
-        super(props);
 
-        this.state = {
-          username: undefined,
-          email: undefined,
-          senha: undefined,
-          error: undefined,
-          logged: undefined    
-         }
+
+ const BaseMenu = () => {
     
-      }
-   
-   
-   
-       componentDidMount(){
-         this.verToken();
-        
-         
-         
-    
-       }
-   
-      async verToken(){
-        
-         var token = localStorage.getItem(TOKEN_KEY);
+
+        var [username, setUser] = useState()
+        var [logged, setLogged] = useState()    
+
+
+      useEffect( () => {
+
+        var token = localStorage.getItem(TOKEN_KEY);
         
          if(!token){
-          await this.setState({logged:false})
+            setLogged(false)
    
-         }
-         else {
-           await fetch("http://localhost:4000/api/vertoken" ,{
+         }else {
+            fetch("http://localhost:4000/api/vertoken" ,{
              method: "GET",
              body:undefined,
              headers:{
@@ -49,18 +32,19 @@ import Poplogin from '../poplogin'
                "auth":`Bearer ${token}`
              }
            }).then(response => response.json())
-           
-             .then(async (responseJson) =>  {
-                await this.setState({logged:responseJson.success} )        
+             .then( (responseJson) =>  {
+               
+                setLogged(responseJson.success)
+                console.log(logged);    
                 }
                 )
-         }
-         console.log(this.state.logged);
-      }
+
+              }
+        }, [])
+    
+        
+         
    
-
-
-render(){
     return(
         <Navbar fixed="top" variant="light" expand="lg">
             <div className="btn-login">
@@ -70,8 +54,9 @@ render(){
             </div> 
         </Navbar>
     )
-}
-}
+    }
+
+
 const Menumidias = withRouter(BaseMenu)
 
 export default Menumidias;

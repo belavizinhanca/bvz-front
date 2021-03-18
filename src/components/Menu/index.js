@@ -6,11 +6,8 @@ import logo from '../images/logobvznovoLinha.png'
 import './Menu.css'
 import Poplogin from '../poplogin';
 
- class BaseMenu extends Component {
+const BaseMenu = () => {
   
-
-    
-render(){
     return(
         <Navbar className="menu-major" fixed="top" variant="dark" expand="lg">
         <Container>
@@ -32,7 +29,7 @@ render(){
         </Container>
         </Navbar>
     )
-}}
+}
 
 const Menuex = withRouter(BaseMenu)
 

@@ -37,8 +37,8 @@ class FormLogin extends Component{
         var password = this.state.senha;
 
         const enviandoDados = {username, password}
-        var dadosJson =JSON.stringify(enviandoDados)
-        console.log(dadosJson);
+        // var dadosJson =JSON.stringify(enviandoDados)
+        //console.log(dadosJson);
 
         if (!username || !password) {
           this.setState({ error: "Preencha e-mail e senha para continuar!" });
