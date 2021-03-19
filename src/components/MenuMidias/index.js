@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { withRouter } from 'react-router-dom'
 import { Navbar, Nav, Container, Image } from 'react-bootstrap'
+import AuthContext from '../contexts'
 
 import { TOKEN_KEY, getToken } from "../../components/services/auth";
 
@@ -11,9 +12,9 @@ import Poplogin from '../poplogin'
 
  const BaseMenu = () => {
     
+        var {nome, setNome, signed, setSigned} = useContext(AuthContext);
 
-        var [username, setUser] = useState()
-        var [logged, setLogged] = useState()    
+         
 
 
       useEffect( () => {
@@ -21,7 +22,7 @@ import Poplogin from '../poplogin'
         var token = localStorage.getItem(TOKEN_KEY);
         
          if(!token){
-            setLogged(false)
+            setSigned(false)
    
          }else {
             fetch("http://localhost:4000/api/vertoken" ,{
@@ -32,10 +33,12 @@ import Poplogin from '../poplogin'
                "auth":`Bearer ${token}`
              }
            }).then(response => response.json())
-             .then( (responseJson) =>  {
-               
-                setLogged(responseJson.success)
-                console.log(logged);    
+             .then( async (responseJson) =>  {
+                await setSigned(responseJson.success)
+                if(signed){
+                  return {nome}
+                }
+
                 }
                 )
 
