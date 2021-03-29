@@ -16,7 +16,7 @@ import AuthContext from './components/contexts'
 function App() {
   const pegaNome = localStorage.getItem('nomeUsuario')
 
-const [nome, setNome] = useState(pegaNome);
+const [nome, setNome] = useState('Entrar');
 const [signed, setSigned] = useState(undefined);
 
 

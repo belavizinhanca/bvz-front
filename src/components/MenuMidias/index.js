@@ -7,6 +7,7 @@ import { TOKEN_KEY, getToken } from "../../components/services/auth";
 
 import './menumidias.css'
 import Poplogin from '../poplogin'
+import { keyframes } from 'styled-components';
 
 
 
@@ -14,39 +15,6 @@ import Poplogin from '../poplogin'
     
         var {nome, setNome, signed, setSigned} = useContext(AuthContext);
 
-         
-
-
-      useEffect( () => {
-
-        var token = localStorage.getItem(TOKEN_KEY);
-        
-         if(!token){
-            setSigned(false)
-   
-         }else {
-            fetch("http://localhost:4000/api/vertoken" ,{
-             method: "GET",
-             body:undefined,
-             headers:{
-               "Content-Type": "application/json",
-               "auth":`Bearer ${token}`
-             }
-           }).then(response => response.json())
-             .then( async (responseJson) =>  {
-                await setSigned(responseJson.success)
-                if(signed){
-                  return {nome}
-                }
-
-                }
-                )
-
-              }
-        }, [])
-    
-        
-         
    
     return(
         <Navbar fixed="top" variant="light" expand="lg">
