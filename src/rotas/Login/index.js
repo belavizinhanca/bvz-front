@@ -31,7 +31,7 @@ class Login extends Component {
         } catch (err) {
           this.setState({
             error:
-              "Houve um problema com o login, verifique suas credenciais. T.T"
+              "Houve um problema com o login, verifique suas credenciais."
           });
         }
       }
@@ -46,7 +46,7 @@ class Login extends Component {
                     <div className="inputs-container">
                         <Form.Group>
                             <Form.Label htmlFor="email">E-mail</Form.Label>
-                            <Form.Control type="text" placeholder="Digite seu e-mail" id="username"   onChange={e => this.setState({ username: e.target.value })}required/>
+                            <Form.Control type="text" placeholder="Digite seu e-mail" id="username"   onChange={e => this.setState({ username: e.target.value })} required/>
                         </Form.Group>
 
                         <Form.Group>

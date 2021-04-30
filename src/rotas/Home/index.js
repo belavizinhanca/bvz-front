@@ -42,7 +42,7 @@ function Home() {
                     </div>
 
                     <div className="img-container">
-                    <iframe width="327" height="209" src="https://www.youtube.com/embed/EsPpfCZPBhQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="327" height="209" src="https://www.youtube.com/embed/EsPpfCZPBhQ" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
 
@@ -54,7 +54,7 @@ function Home() {
                     </div>
 
                     <div className="img-container">
-                    <iframe width="327" height="209" src="https://www.youtube.com/embed/8XRm7pXI9z8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="327" height="209" src="https://www.youtube.com/embed/8XRm7pXI9z8" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
             </Container>

@@ -1,25 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { withRouter } from 'react-router-dom'
 import { Navbar, Nav, Container, Image } from 'react-bootstrap'
 import logo from '../images/logobvznovoLinha.png'
 
+import AuthContext from '../contexts'
+
 import './Menu.css'
 import Poplogin from '../poplogin';
 
-function BaseMenu() {
+const BaseMenu = () => {
 
-    const [anchorEl, setAnchorEl] = React.useState('');
+    var { signed, setSigned} = useContext(AuthContext);
 
-    const handleClick = (event) => {
-      setAnchorEl(event.currentTarget);
-    };
+    console.log(signed);
   
-    const handleClose = () => {
-      setAnchorEl(null);
-    };
-
-    
-
     return(
         <Navbar className="menu-major" fixed="top" variant="dark" expand="lg">
         <Container>
@@ -33,7 +27,7 @@ function BaseMenu() {
                 <Nav.Link href="/doacao" to="/doacao">Doação</Nav.Link>
                 <Nav.Link href="/servicos-uteis" to="/servicos-uteis">Serviços</Nav.Link>             
                 <Nav.Link href="/contato" to="/contato">Contato</Nav.Link>
-                <Nav.Link href="/gerenciar" to="/gerenciar">Gerenciar</Nav.Link>
+                {signed && <Nav.Link show="false" href="/gerenciar" to="/gerenciar">Gerenciar</Nav.Link>}
                 <Nav.Link href="/app" to="/app">App</Nav.Link>
              
                 </Nav>
