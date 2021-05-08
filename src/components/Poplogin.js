@@ -6,7 +6,7 @@ import './poplogin.css'
 
 
 
-export default function Poplogin() {
+export function Poplogin() {
 
 
   //trazendo os States do context

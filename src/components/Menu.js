@@ -6,7 +6,7 @@ import logo from '../images/logobvznovoLinha.png'
 import AuthContext from '../contexts'
 
 import './Menu.css'
-import Poplogin from '../poplogin';
+import Poplogin from './Poplogin';
 
 const BaseMenu = () => {
 

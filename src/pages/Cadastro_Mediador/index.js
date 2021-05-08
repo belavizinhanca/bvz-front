@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Container, Form, Button, Jumbotron} from 'react-bootstrap'
 import { useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import api from "../../components/services/api";
+import api from "../../services/api";
 
 import './Cad_Mediador.css'
 

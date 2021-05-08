@@ -3,10 +3,10 @@ import { useState, useEffect, useContext } from 'react'
 import { Container } from 'react-bootstrap'
 
 import './Gerenciar.css'
-import Demanda from './demanda'
-import NovaDemanda from '../Cadastro_Demanda/novaDemandaModal'
+import Demanda from './Demanda'
+import NovaDemanda from './Cadastro_Demanda/novaDemandaModal'
 
-import AuthContext from '../../components/contexts'
+import AuthContext from '../components/contexts'
 
 
 function Gerenciar() {

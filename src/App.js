@@ -5,13 +5,13 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Routes from './Routes.js'
 import Menu from './components/Menu'
-import Copyright from './components/copyright'
+import Copyright from './components/Copyright'
 import Footer from './components/Footer'
 import BtnFlutuante from './components/btnDoe'
 import Menumidias from './components/MenuMidias'
 
 //importar contexto de autenticação
-import AuthContext from './components/contexts'
+import AuthContext from './contexts'
 
 function App() {
   const pegaNome = localStorage.getItem('nomeUsuario')

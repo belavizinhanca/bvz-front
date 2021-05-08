@@ -1,23 +1,23 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 
-import { isAuthenticated } from "./components/services/auth";
+import { isAuthenticated } from "./services/auth";
 
 
 
 
-import Home                 from './rotas/Home'
-import QuemSomos            from './rotas/Quem_Somos'
-import Mediador             from './rotas/Mediador'
-import CadastroMediador     from './rotas/Cadastro_Mediador'
-import Demandas             from './rotas/Demandas'
+import Home                 from './routes/Home'
+import QuemSomos            from './routes/QuemSomos'
+import Mediador             from './routes/Mediador'
+import CadastroMediador     from './routes/Cadastro_Mediador'
+import Demandas             from './routes/Demandas'
 // import CadDemanda           from './rotas/Cadastro_Demanda'
-import Contato              from './rotas/Contato'
-import Gerenciar            from './rotas/Gerenciar'
-import Login                from './rotas/Login'
+import Contato              from './routes/contato'
+import Gerenciar            from './routes/Gerenciar'
+import Login                from './routes/Login'
 // import Cadastro             from './rotas/Cadastro'
-import Uteis                from './rotas/Uteis'
-import Equipe               from './rotas/Equipe'
+import Uteis                from './routes/uteis'
+import Equipe               from './routes/Equipe'
 
 
 const PrivateRoute = ({ component: Component, ...rest }) => (

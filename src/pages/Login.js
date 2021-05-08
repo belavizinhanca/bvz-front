@@ -3,8 +3,8 @@ import { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { Container, Form, Button } from 'react-bootstrap'
 
-import api from "../../components/services/api";
-import { login } from "../../components/services/auth";
+import api from "../services/api";
+import { login } from "../services/auth";
 
 import './Login.css'
 

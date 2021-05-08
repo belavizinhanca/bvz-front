@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { withRouter } from 'react-router-dom'
 import { Navbar, Nav, Container, Image } from 'react-bootstrap'
-import AuthContext from '../contexts'
+import AuthContext from './contexts'
 
-import { TOKEN_KEY, getToken } from "../../components/services/auth";
+import { TOKEN_KEY, getToken } from "../services/auth";
 
 import './menumidias.css'
-import Poplogin from '../poplogin'
+import Poplogin from './Poplogin'
 import { keyframes } from 'styled-components';
 
 
