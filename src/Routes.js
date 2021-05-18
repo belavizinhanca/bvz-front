@@ -1,10 +1,7 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 
 import { isAuthenticated } from "./components/services/auth";
-
-
-
 
 import Home                 from './rotas/Home'
 import QuemSomos            from './rotas/Quem_Somos'
@@ -44,7 +41,7 @@ function Routes() {
             <Route exact path="/entrar"                 component={Login} />
             {/* <Route exact path="/cadastro"           component={Cadastro} /> /> */}
             {/* depois mudar para PrivateRoute */}
-            <Route exact path="/gerenciar"              component={Gerenciar} />
+            <PrivateRoute path="/gerenciar" component={Gerenciar} />
             <Route path="*"                             component={() => <h1>Page not found</h1>} />
         </Switch>
     )

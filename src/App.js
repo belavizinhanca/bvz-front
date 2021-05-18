@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import './App.css?55496874'
 import { BrowserRouter } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -9,20 +8,11 @@ import Copyright from './components/copyright'
 import Footer from './components/Footer'
 import BtnFlutuante from './components/btnDoe'
 import Menumidias from './components/MenuMidias'
-
-//importar contexto de autenticação
-import AuthContext from './components/contexts'
+import { AuthProvider } from './contexts/auth'
 
 function App() {
-  const pegaNome = localStorage.getItem('nomeUsuario')
-
-const [nome, setNome] = useState('Entrar');
-const [signed, setSigned] = useState(undefined);
-
-
-
   return (
-    <AuthContext.Provider value={{nome, setNome, signed, setSigned}}>
+    <AuthProvider>
       <BrowserRouter>
         <div className="App">
             <header>
@@ -42,7 +32,7 @@ const [signed, setSigned] = useState(undefined);
 
           </footer>
       </BrowserRouter>
-    </AuthContext.Provider>
+    </AuthProvider>
   );
 }
 

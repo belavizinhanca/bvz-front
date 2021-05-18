@@ -1,21 +1,12 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React from 'react'
 import { withRouter } from 'react-router-dom'
-import { Navbar, Nav, Container, Image } from 'react-bootstrap'
-import AuthContext from '../contexts'
-
-import { TOKEN_KEY, getToken } from "../../components/services/auth";
-
+import { Navbar, Nav } from 'react-bootstrap'
 import './menumidias.css'
 import Poplogin from '../poplogin'
-import { keyframes } from 'styled-components';
 
 
 
  const BaseMenu = () => {
-    
-        var {nome, setNome, signed, setSigned} = useContext(AuthContext);
-
-   
     return(
         <Navbar fixed="top" variant="light" expand="lg">
             <div className="btn-login">

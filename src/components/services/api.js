@@ -2,7 +2,7 @@ import axios from "axios";
 import { getToken } from "./auth";
 
 const api = axios.create({
-  baseURL: "http://localhost:4000/api"
+  baseURL: "https://bvz-back.herokuapp.com/api/vertoken"
 });
 
 api.interceptors.request.use(async config => {

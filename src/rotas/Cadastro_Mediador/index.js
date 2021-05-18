@@ -1,42 +1,31 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Container, Form, Button, Jumbotron} from 'react-bootstrap'
 import { useState } from 'react'
-import { useHistory } from 'react-router-dom'
-import api from "../../components/services/api";
 
 import './Cad_Mediador.css'
+import axios from 'axios';
 
+function CadastroMediador() {
+    const [form, setForm] = useState({
+        nome: '',
+        email: '',
+        contato: '',
+        endereco: '',
+        senha: ''
+    });
 
-
-class CadastroMediador extends Component {
-    state = {
-                nome: "",
-                contato: "",
-                endereco: "",
-                email: "",
-                senha: ""
-            };
-  
-    handleCadastro = async e => {
-        e.preventDefault();
-
-      const { nome, contato, endereco, email, senha } = this.state;
-
-  if (!nome || !email || !senha) {
-    this.setState({ error: "Preencha todos os dados para se cadastrar" });
-  } else {
-    try {
-      await api.post("/register", { nome, contato, endereco, email, senha });
-      this.props.history.push("/");
-    } catch (err) {
-      console.log(err);
-      this.setState({ error: "Ocorreu um erro ao registrar sua conta. T.T" });
+    const handleChange = ({target}) => {
+        const { id, value } = target;
+        setForm({ ...form, [id]: value });
     }
-  }
-};
-    render(){
-    return(    
-        
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        const response = await axios.post('https://bvz-back.herokuapp.com/api/register', form);
+        console.log(response.data);
+    }
+
+    return(
         <section className="section-mediador">
             <Container fluid>
                 <Jumbotron className="top-titulo" fluid>
@@ -47,40 +36,35 @@ class CadastroMediador extends Component {
                 </Jumbotron>
                 <div className="titulo-cadastro"><h1>Faça seu Cadastro</h1></div>
                 
-                <Form onSubmit={this.handleCadastro} className="f-mediador">
-                    {this.state.error && <p>{this.state.error}</p>}
-                        <div className="inputs-container">
+                <Form onSubmit={handleSubmit} className="f-mediador">
+                    <div className="inputs-container">
                         <Form.Group>
                             
-                            <Form.Control type="text" placeholder="Nome" id="nome" onChange={e => this.setState({ nome: e.target.value })} required/>
+                            <Form.Control type="text" placeholder="Nome" id="nome" value={form.nome} onChange={handleChange} required/>
                         </Form.Group>
 
                         <Form.Group>
-                            <Form.Control type="text" placeholder="Contato" id="contato" onChange={e => this.setState({ contato: e.target.value })} required/>
+                            <Form.Control type="text" placeholder="Contato" id="contato" value={form.contato} onChange={handleChange} required/>
                         </Form.Group>
 
                         <Form.Group>
-                            <Form.Control type="text" placeholder="Endereço" id="endereco" onChange={e => this.setState({ endereco: e.target.value })} required/>
+                            <Form.Control type="text" placeholder="Endereço" id="endereco" value={form.endereco} onChange={handleChange} required/>
                         </Form.Group>
 
                         <Form.Group >
-                            <Form.Control type="email" placeholder="Email" id="email" onChange={e => this.setState({ email: e.target.value })} required/>
+                            <Form.Control type="email" placeholder="Email" id="email" value={form.email} onChange={handleChange} required/>
                         </Form.Group>
                         <Form.Group>
-                            <Form.Control type="password" placeholder="Senha" id="senha" onChange={e => this.setState({ senha: e.target.value })} required/>
+                            <Form.Control type="password" placeholder="Senha" id="senha" value={form.senha} onChange={handleChange} required/>
                         </Form.Group>
                     </div>
                     <Button className="button-enviar" type="submit">
                         Enviar
                     </Button>
                 </Form>
-            {/* <div className="container-flex-med sejamediador">
-                
-            
-            </div> */}
-      </Container>
-    </section>
-    )}
+            </Container>
+        </section>
+    )
 }
 
 export default CadastroMediador;

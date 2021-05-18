@@ -1,10 +1,10 @@
 export const TOKEN_KEY = "bvz-identifyByJsonWebTokenOnAPIserver";
 
 
-export const getToken = () => localStorage.getItem(TOKEN_KEY);
+export const getToken = () => localStorage.getItem('token');
 
 
-export const isAuthenticated = () => getToken() !== null;
+export const isAuthenticated = () => !!getToken();
 
 
 export const login = token => {
