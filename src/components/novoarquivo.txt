@@ -1,0 +1,1 @@
+Estou criando esse arquivo para explicar para o Assis como faz o versionamento no github. 
